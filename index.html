@@ -206,6 +206,25 @@
     display:none; white-space:pre-wrap;
   }
   .q-img{ max-width:100%; border-radius:8px; margin:10px 0 18px; border:1px solid var(--border); }
+  .q-context{
+    background:#f2f8f6; border:1px solid var(--jade); border-radius:10px;
+    padding:14px 18px; margin:0 0 18px;
+  }
+  .q-context-label{
+    font-size:calc(12px * var(--fs-scale)); font-weight:700; letter-spacing:.3px;
+    color:var(--jade-dark); margin-bottom:6px; text-transform:uppercase;
+  }
+  .q-context-en{ font-size:calc(14.5px * var(--fs-scale)); line-height:1.6; margin:0; white-space:pre-wrap; }
+  .q-context-zh{
+    font-size:calc(13.5px * var(--fs-scale)); line-height:1.7; color:var(--jade-dark);
+    margin:8px 0 0; padding-top:8px; border-top:1px dashed var(--jade);
+    display:none; white-space:pre-wrap;
+  }
+  .q-flag{
+    background:var(--wrong-bg); border:1px solid var(--wrong); color:var(--wrong);
+    border-radius:10px; padding:10px 16px; margin:0 0 14px;
+    font-size:calc(13px * var(--fs-scale)); line-height:1.5;
+  }
   .options{ display:flex; flex-direction:column; gap:10px; }
   .option{ border:1px solid var(--border); border-radius:10px; padding:12px 16px; cursor:pointer; transition:.15s; }
   .option:hover{ border-color:var(--jade); background:#f2f8f6; }
@@ -294,6 +313,12 @@
 
       <div class="q-card" id="qCard">
         <img class="q-img" id="qImg" style="display:none;">
+        <div class="q-context" id="qContext" style="display:none;">
+          <div class="q-context-label" id="qContextLabel"></div>
+          <p class="q-context-en" id="qContextEn"></p>
+          <p class="q-context-zh" id="qContextZh"></p>
+        </div>
+        <div class="q-flag" id="qFlag" style="display:none;"></div>
         <p class="q-text-en" id="qEn"></p>
         <p class="q-text-zh" id="qZh"></p>
 
@@ -394,13 +419,51 @@ function openSidebar(){ sidebarOpen = true; applySidebarState(); }
 function closeSidebar(){ sidebarOpen = false; applySidebarState(); }
 document.addEventListener('keydown', e=>{ if(e.key === 'Escape' && sidebarOpen) closeSidebar(); });
 
+// Some categories (currently q1000) contain case-based question groups:
+// consecutive questions that share a clinical-case "context" and only make
+// sense together. buildUnits() partitions a category's questions into draw
+// units -- each unit is either a single standalone question, or the full
+// ordered run of a group's members -- so that random draws and half-range
+// splits below always keep a group intact instead of scattering its
+// members. Categories with no group_id fields degrade to one unit per
+// question, which reproduces the previous (ungrouped) behavior exactly.
+function buildUnits(cat){
+  if(cat._units) return cat._units;
+  const qs = cat.questions;
+  const units = [];
+  let i = 0;
+  while(i < qs.length){
+    const gid = qs[i].group_id;
+    if(gid){
+      const unit = [i];
+      let j = i+1;
+      while(j < qs.length && qs[j].group_id === gid){ unit.push(j); j++; }
+      units.push(unit);
+      i = j;
+    } else {
+      units.push([i]);
+      i++;
+    }
+  }
+  cat._units = units;
+  return units;
+}
+
 function poolIndices(cat, rangeMode){
+  const units = buildUnits(cat);
+  if(rangeMode !== 'first' && rangeMode !== 'second'){
+    return units.flat();
+  }
   const n = cat.questions.length;
-  const all = cat.questions.map((_,i)=>i);
   const half = Math.ceil(n/2);
-  if(rangeMode === 'first') return all.slice(0, half);
-  if(rangeMode === 'second') return all.slice(half);
-  return all;
+  const firstUnits = [];
+  const secondUnits = [];
+  let count = 0;
+  units.forEach(u=>{
+    if(count < half){ firstUnits.push(u); count += u.length; }
+    else { secondUnits.push(u); }
+  });
+  return (rangeMode === 'first' ? firstUnits : secondUnits).flat();
 }
 
 function rangeLabelText(rangeMode){
@@ -447,13 +510,29 @@ function reviewWrong(key){
 }
 
 function makeOrder(cat, size, rangeMode){
-  const idxs = poolIndices(cat, rangeMode).slice();
-  if(size === 'all' || size >= idxs.length) return idxs;
-  for(let i=idxs.length-1;i>0;i--){
+  const idxs = poolIndices(cat, rangeMode);
+  if(size === 'all' || size >= idxs.length) return idxs.slice();
+
+  // Group-aware random draw: shuffle whole units (a standalone question, or
+  // an entire case-based group) rather than individual questions, then take
+  // whole units until we've reached the requested size. This never splits a
+  // group across the draw boundary -- the draw may end up a little larger
+  // than `size` when the unit that crosses the threshold is a multi-question
+  // group, which is preferable to handing back an unreadable lone fragment
+  // of a case.
+  const idxSet = new Set(idxs);
+  const units = buildUnits(cat).filter(u => idxSet.has(u[0]));
+  const shuffled = units.slice();
+  for(let i=shuffled.length-1;i>0;i--){
     const j = Math.floor(Math.random()*(i+1));
-    [idxs[i],idxs[j]] = [idxs[j],idxs[i]];
+    [shuffled[i],shuffled[j]] = [shuffled[j],shuffled[i]];
   }
-  return idxs.slice(0,size);
+  const result = [];
+  for(const u of shuffled){
+    if(result.length >= size) break;
+    result.push(...u);
+  }
+  return result;
 }
 
 function makeState(cat, drawSize, rangeMode){
@@ -643,6 +722,27 @@ function render(){
   document.getElementById('qPos').textContent = `第 ${idx+1} 題 / 抽出 ${st.order.length} 題${rangeSuffix}`;
   const answeredCount = st.answers.filter(a=>a.answered).length;
   document.getElementById('answeredInfo').textContent = `已作答 ${answeredCount} / ${st.order.length} 題`;
+  const qc = document.getElementById('qContext');
+  if(q.context_en){
+    qc.style.display = 'block';
+    document.getElementById('qContextLabel').textContent =
+      `題組 Case-based question ${q.group_index}/${q.group_size}`;
+    document.getElementById('qContextEn').textContent = q.context_en;
+    const ctxZhEl = document.getElementById('qContextZh');
+    ctxZhEl.textContent = zhDisplay(q.context_hant);
+    ctxZhEl.style.display = ansSt.answered ? 'block' : 'none';
+  } else {
+    qc.style.display = 'none';
+  }
+
+  const flagEl = document.getElementById('qFlag');
+  if(q.needs_review){
+    flagEl.style.display = 'block';
+    flagEl.textContent = '⚠ ' + (q.review_note || '此題資料有疑義，建議對照原始題庫確認。');
+  } else {
+    flagEl.style.display = 'none';
+  }
+
   document.getElementById('qEn').textContent = q.question_en;
   document.getElementById('qZh').textContent = zhText(q);
   document.getElementById('qZh').style.display = ansSt.answered ? 'block' : 'none';
