@@ -74,6 +74,22 @@
     margin:0 0 10px;
     border-bottom:1px solid rgba(255,255,255,.15);
   }
+  .sidebar-section{ padding:0 20px 18px; margin-bottom:8px; border-bottom:1px solid rgba(255,255,255,.15); }
+  .sidebar-section-label{ font-size:12px; color:#d9cfa8; margin:0 0 8px; letter-spacing:.3px; }
+  .sidebar .font-ctrl{ display:flex; gap:6px; align-items:center; border:none; padding:0; margin:0; }
+  .sbtn{
+    border:1px solid rgba(255,255,255,.3);
+    background:rgba(255,255,255,.06);
+    color:#f2ece0;
+    padding:7px 12px;
+    border-radius:8px;
+    font-size:13px;
+    cursor:pointer;
+    transition:.15s;
+    min-width:36px;
+  }
+  .sbtn:hover{ border-color:var(--gold); background:rgba(255,255,255,.14); }
+  .sbtn.active{ background:var(--gold); border-color:var(--gold); color:#2b2a26; }
   .menu-toggle{
     display:flex; align-items:center; gap:7px;
     border:1px solid var(--border);
@@ -172,6 +188,10 @@
     z-index:5;
     flex-wrap:wrap;
     gap:10px;
+    max-width:1200px;
+    width:100%;
+    margin:0 auto;
+    box-sizing:border-box;
   }
   .topbar-left{ display:flex; align-items:center; gap:14px; flex-wrap:wrap; }
   .topbar h1{ font-size:18px; margin:0; color:var(--jade-dark); }
@@ -280,27 +300,32 @@
   <div class="backdrop" id="backdrop" onclick="closeSidebar()"></div>
 
   <div class="sidebar" id="sidebar">
-    <div class="sidebar-close"><button onclick="closeSidebar()" title="關閉選單">✕</button></div>
-    <h2>考題分類 Categories</h2>
+    <div class="sidebar-close"><button onclick="closeSidebar()" title="關閉選單" data-zh-title="關閉選單">✕</button></div>
+
+    <div class="sidebar-section">
+      <div class="sidebar-section-label" data-zh="顯示設定 Display">顯示設定 Display</div>
+      <div class="font-ctrl">
+        <button class="sbtn" onclick="adjustFont(-1)" title="縮小字體" data-zh-title="縮小字體">A－</button>
+        <button class="sbtn" onclick="resetFont()" id="fontPct" title="回預設字級" data-zh-title="回預設字級">100%</button>
+        <button class="sbtn" onclick="adjustFont(1)" title="放大字體" data-zh-title="放大字體">A＋</button>
+      </div>
+    </div>
+
+    <h2 data-zh="考題分類 Categories">考題分類 Categories</h2>
     <div id="catList"></div>
   </div>
 
   <div class="main">
     <div class="topbar">
       <div class="topbar-left">
-        <button class="menu-toggle" onclick="toggleSidebar()"><span class="bars">☰</span> 分類 Categories</button>
-        <h1>TCM 題庫練習 Quiz Bank</h1>
+        <button class="menu-toggle" onclick="toggleSidebar()"><span class="bars">☰</span> <span data-zh="分類 Categories">分類 Categories</span></button>
+        <h1 data-zh="TCM 題庫練習 Quiz Bank">TCM 題庫練習 Quiz Bank</h1>
       </div>
       <div class="controls">
-        <div class="font-ctrl">
-          <button class="btn" onclick="adjustFont(-1)" title="縮小字體">A－</button>
-          <button class="btn" onclick="resetFont()" id="fontPct" title="回預設字級">100%</button>
-          <button class="btn" onclick="adjustFont(1)" title="放大字體">A＋</button>
-        </div>
         <button class="btn" id="btnHant" onclick="setScriptMode('hant')">繁體</button>
         <button class="btn" id="btnHans" onclick="setScriptMode('hans')">简体</button>
         <button class="btn wrong-redo" id="btnWrong" onclick="reviewWrong(currentCat)" disabled>錯題重做 (0)</button>
-        <button class="btn restart" onclick="restartAll()">重新開始 Restart</button>
+        <button class="btn restart" onclick="restartAll()" data-zh="重新開始 Restart">重新開始 Restart</button>
       </div>
     </div>
 
@@ -325,14 +350,14 @@
         <div class="options" id="options"></div>
 
         <div class="explain" id="explain">
-          <h4>題解 Explanation</h4>
+          <h4 data-zh="題解 Explanation">題解 Explanation</h4>
           <div class="exp-en" id="expEn"></div>
           <div class="exp-zh" id="expZh"></div>
         </div>
 
         <div class="nav-row">
-          <button class="btn" id="prevBtn" onclick="goPrev()">← 上一題 Previous</button>
-          <button class="btn" id="nextBtn" onclick="goNext()">下一題 Next →</button>
+          <button class="btn" id="prevBtn" onclick="goPrev()" data-zh="← 上一題 Previous">← 上一題 Previous</button>
+          <button class="btn" id="nextBtn" onclick="goNext()" data-zh="下一題 Next →">下一題 Next →</button>
         </div>
       </div>
     </div>
@@ -404,6 +429,22 @@ function zhDisplay(text){
   if(!text) return text;
   return scriptMode === 'hans' ? t2cnConvert(text) : text;
 }
+
+// Static UI chrome (page title, sidebar headers, nav/explain labels, etc.)
+// isn't rebuilt from question data on every render, so it can't go through
+// zhDisplay() at render time the way question/option/context text does.
+// Each such element carries its pristine Traditional-Chinese text in a
+// data-zh / data-zh-title attribute; this pass re-derives the element's
+// displayed text/tooltip from that pristine copy every time it runs, so
+// switching 繁體→簡體→繁體 always round-trips cleanly with no drift.
+function applyStaticZh(){
+  document.querySelectorAll('[data-zh]').forEach(el=>{
+    el.textContent = zhDisplay(el.dataset.zh);
+  });
+  document.querySelectorAll('[data-zh-title]').forEach(el=>{
+    el.title = zhDisplay(el.dataset.zhTitle);
+  });
+}
 let fontScale = 1;
 const FONT_STEP = 0.1, FONT_MIN = 0.7, FONT_MAX = 1.6;
 
@@ -467,9 +508,9 @@ function poolIndices(cat, rangeMode){
 }
 
 function rangeLabelText(rangeMode){
-  if(rangeMode === 'first') return '前半段';
-  if(rangeMode === 'second') return '後半段';
-  if(rangeMode === 'wrong') return '錯題重做';
+  if(rangeMode === 'first') return zhDisplay('前半段');
+  if(rangeMode === 'second') return zhDisplay('後半段');
+  if(rangeMode === 'wrong') return zhDisplay('錯題重做');
   return '';
 }
 
@@ -559,6 +600,7 @@ function zhExpText(q){ return zhDisplay(q.exp_hant); }
 function setScriptMode(mode){
   scriptMode = mode;
   try { localStorage.setItem('tcm_script_mode', mode); } catch(e) { /* ignore */ }
+  document.documentElement.lang = mode === 'hans' ? 'zh-Hans' : 'zh-Hant';
   document.body.classList.toggle('script-hans', mode === 'hans');
   document.getElementById('btnHant').classList.toggle('active', mode === 'hant');
   document.getElementById('btnHans').classList.toggle('active', mode === 'hans');
@@ -576,7 +618,7 @@ function scoreText(key){
     return opt && opt.correct;
   }).length;
   const pct = total ? Math.round((correct/total)*100) : 0;
-  return `${correct} 對 / ${total} 題 (${pct}%)`;
+  return `${correct} ${zhDisplay('對')} / ${total} ${zhDisplay('題')} (${pct}%)`;
 }
 
 function buildSidebar(){
@@ -605,9 +647,9 @@ function buildSidebar(){
       count.id = 'score-' + key;
       count.textContent = scoreText(key);
     } else if(cat.loadError){
-      count.textContent = '找不到 ' + cat.file;
+      count.textContent = zhDisplay('找不到 ') + cat.file;
     } else {
-      count.textContent = '共 ' + (cat.total || '?') + ' 題・待建置';
+      count.textContent = zhDisplay('共 ') + (cat.total || '?') + zhDisplay(' 題・待建置');
     }
     header.appendChild(label);
     header.appendChild(count);
@@ -619,12 +661,12 @@ function buildSidebar(){
       rangeRow.className = 'draw-row';
       const rangeLabel = document.createElement('span');
       rangeLabel.className = 'draw-label';
-      rangeLabel.textContent = '範圍';
+      rangeLabel.textContent = zhDisplay('範圍');
       rangeRow.appendChild(rangeLabel);
       [['all','全部'],['first','前半段'],['second','後半段']].forEach(([val,label])=>{
         const chip = document.createElement('span');
         chip.className = 'draw-chip' + (state[key].rangeMode===val ? ' active' : '');
-        chip.textContent = label;
+        chip.textContent = zhDisplay(label);
         chip.addEventListener('click', ev=>{ ev.stopPropagation(); setRange(key, val); });
         rangeRow.appendChild(chip);
       });
@@ -634,7 +676,7 @@ function buildSidebar(){
       drawRow.className = 'draw-row';
       const sizeLabel = document.createElement('span');
       sizeLabel.className = 'draw-label';
-      sizeLabel.textContent = '題數';
+      sizeLabel.textContent = zhDisplay('題數');
       drawRow.appendChild(sizeLabel);
       const poolLen = poolIndices(cat, state[key].rangeMode).length;
       const sizes = DRAW_SIZES.filter(s=>s <= poolLen);
@@ -642,14 +684,14 @@ function buildSidebar(){
       sizes.forEach(s=>{
         const chip = document.createElement('span');
         chip.className = 'draw-chip' + (state[key].drawSize===s ? ' active' : '');
-        chip.textContent = s==='all' ? ('全部 ' + poolLen) : (s + ' 題');
+        chip.textContent = s==='all' ? (zhDisplay('全部 ') + poolLen) : (s + zhDisplay(' 題'));
         chip.addEventListener('click', ev=>{ ev.stopPropagation(); setDraw(key, s); });
         drawRow.appendChild(chip);
       });
       const redrawBtn = document.createElement('span');
       redrawBtn.className = 'redraw-btn';
-      redrawBtn.textContent = '🔀 重抽';
-      redrawBtn.title = '重新隨機抽題';
+      redrawBtn.textContent = '🔀 ' + zhDisplay('重抽');
+      redrawBtn.title = zhDisplay('重新隨機抽題');
       redrawBtn.addEventListener('click', ev=>{ ev.stopPropagation(); redraw(key); });
       drawRow.appendChild(redrawBtn);
       item.appendChild(drawRow);
@@ -662,6 +704,7 @@ function buildSidebar(){
 function refresh(){
   buildSidebar();
   render();
+  applyStaticZh();
 }
 
 function selectCat(key){
@@ -699,11 +742,11 @@ function render(){
   const cat = CATS[currentCat];
   if(!cat || !cat.questions){
     const msg = cat && cat.loadError
-      ? `找不到題庫檔案「${cat.file}」，請確認這個 json 檔案和 html 放在同一個資料夾底下。<br>Could not load "${cat.file}" — make sure it sits next to this html file.`
-      : '這個分類還在建置中，敬請期待。<br>This category is not built yet.';
+      ? `${zhDisplay('找不到題庫檔案「')}${cat.file}${zhDisplay('」，請確認這個 json 檔案和 html 放在同一個資料夾底下。')}<br>Could not load "${cat.file}" — make sure it sits next to this html file.`
+      : `${zhDisplay('這個分類還在建置中，敬請期待。')}<br>This category is not built yet.`;
     document.getElementById('content').innerHTML = '<div class="placeholder">'+msg+'</div>';
     const wb = document.getElementById('btnWrong');
-    wb.textContent = '錯題重做 (0)';
+    wb.textContent = zhDisplay('錯題重做') + ' (0)';
     wb.disabled = true;
     return;
   }
@@ -719,14 +762,16 @@ function render(){
 
   document.getElementById('catLabel').textContent = `${zhDisplay(cat.nameZh)} ${cat.nameEn}`;
   const rangeSuffix = rangeLabelText(st.rangeMode) ? `（${rangeLabelText(st.rangeMode)}）` : '';
-  document.getElementById('qPos').textContent = `第 ${idx+1} 題 / 抽出 ${st.order.length} 題${rangeSuffix}`;
+  document.getElementById('qPos').textContent =
+    `${zhDisplay('第')} ${idx+1} ${zhDisplay('題')} / ${zhDisplay('抽出')} ${st.order.length} ${zhDisplay('題')}${rangeSuffix}`;
   const answeredCount = st.answers.filter(a=>a.answered).length;
-  document.getElementById('answeredInfo').textContent = `已作答 ${answeredCount} / ${st.order.length} 題`;
+  document.getElementById('answeredInfo').textContent =
+    `${zhDisplay('已作答')} ${answeredCount} / ${st.order.length} ${zhDisplay('題')}`;
   const qc = document.getElementById('qContext');
   if(q.context_en){
     qc.style.display = 'block';
     document.getElementById('qContextLabel').textContent =
-      `題組 Case-based question ${q.group_index}/${q.group_size}`;
+      `${zhDisplay('題組')} Case-based question ${q.group_index}/${q.group_size}`;
     document.getElementById('qContextEn').textContent = q.context_en;
     const ctxZhEl = document.getElementById('qContextZh');
     ctxZhEl.textContent = zhDisplay(q.context_hant);
@@ -738,7 +783,7 @@ function render(){
   const flagEl = document.getElementById('qFlag');
   if(q.needs_review){
     flagEl.style.display = 'block';
-    flagEl.textContent = '⚠ ' + (q.review_note || '此題資料有疑義，建議對照原始題庫確認。');
+    flagEl.textContent = '⚠ ' + (q.review_note || zhDisplay('此題資料有疑義，建議對照原始題庫確認。'));
   } else {
     flagEl.style.display = 'none';
   }
@@ -802,7 +847,7 @@ function render(){
 
   const wrongCount = countWrong(currentCat);
   const wb = document.getElementById('btnWrong');
-  wb.textContent = `錯題重做 (${wrongCount})`;
+  wb.textContent = `${zhDisplay('錯題重做')} (${wrongCount})`;
   wb.disabled = wrongCount === 0;
 }
 
@@ -840,6 +885,7 @@ function resetFont(){
   applyFontScale();
 }
 
+document.documentElement.lang = scriptMode === 'hans' ? 'zh-Hans' : 'zh-Hant';
 document.body.classList.toggle('script-hans', scriptMode === 'hans');
 document.getElementById('btnHant').classList.toggle('active', scriptMode === 'hant');
 document.getElementById('btnHans').classList.toggle('active', scriptMode === 'hans');
@@ -847,6 +893,7 @@ applyFontScale();
 applySidebarState();
 buildSidebar();
 render();
+applyStaticZh();
 </script>
 </body>
 </html>
