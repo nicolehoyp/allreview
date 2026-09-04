@@ -47,7 +47,7 @@
   .sidebar{
     position:fixed;
     top:0; left:0; bottom:0;
-    width:300px;
+    width:328px;
     max-width:85vw;
     background:var(--jade-dark);
     color:#f2ece0;
@@ -90,89 +90,143 @@
   }
   .sbtn:hover{ border-color:var(--gold); background:rgba(255,255,255,.14); }
   .sbtn.active{ background:var(--gold); border-color:var(--gold); color:#2b2a26; }
+  /* Filled in the same deep jade as the drawer it opens, so it reads as the
+     way into that panel and stops disappearing into the white topbar. */
   .menu-toggle{
     display:flex; align-items:center; gap:7px;
-    border:1px solid var(--border);
-    background:#fff;
-    color:var(--jade-dark);
+    border:1px solid var(--jade-dark);
+    background:var(--jade-dark);
+    color:#f2ece0;
     padding:8px 14px;
     border-radius:8px;
     font-size:14px;
     font-weight:600;
     cursor:pointer;
+    transition:background .15s, border-color .15s;
   }
-  .menu-toggle:hover{ border-color:var(--jade); }
+  .menu-toggle:hover{ background:var(--jade); border-color:var(--jade); }
+  .menu-toggle:focus-visible{ outline:2px solid var(--gold); outline-offset:2px; }
   .menu-toggle .bars{ font-size:16px; line-height:1; }
+  /* Each category is its own card-ish block separated by a hairline, so the
+     list reads as six distinct rows instead of one dense wall of text. */
   .cat-item{
     display:flex;
     flex-direction:column;
-    padding:10px 0;
+    padding:2px 0 6px;
     cursor:default;
     border-left:4px solid transparent;
     font-size:14px;
+    border-bottom:1px solid rgba(255,255,255,.08);
   }
+  .cat-item:last-child{ border-bottom:none; }
   .cat-item:not(.disabled):hover{ background:rgba(255,255,255,.06); }
   .cat-item.active{
     background:rgba(255,255,255,.1);
     border-left-color:var(--gold);
-    font-weight:600;
   }
+  /* Name on top, score underneath -- at 328px wide there is no room to sit a
+     long score pill beside a two-line bilingual name without them colliding. */
   .cat-header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:2px 20px;
-    gap:8px;
+    display:block;
+    padding:10px 18px 8px;
     cursor:pointer;
   }
   .cat-item.disabled .cat-header{ cursor:not-allowed; }
+  .cat-name{ display:block; line-height:1.35; }
+  .cat-name .cat-zh{ font-size:14.5px; font-weight:600; }
+  .cat-name .cat-en{
+    display:block;
+    font-size:11.5px; font-weight:400; color:#b9c9c1;
+    margin-top:1px; letter-spacing:.2px;
+  }
+  .cat-item.active .cat-name .cat-en{ color:#cfe0d8; }
   .cat-item .count{
-    font-size:12px;
+    display:block;
+    font-size:11.5px;
     color:#d9cfa8;
-    background:rgba(0,0,0,.2);
-    padding:2px 8px;
-    border-radius:10px;
+    margin-top:6px;
     white-space:nowrap;
+    font-variant-numeric:tabular-nums;
+  }
+  /* Slim completion bar mirroring the percentage already printed in .count. */
+  .cat-progress{
+    height:3px; border-radius:2px; margin-top:5px;
+    background:rgba(0,0,0,.22); overflow:hidden;
+    transition:background .2s;
+  }
+  /* Not started yet: keep the space so nothing jumps when the first answer
+     lands, but show no line -- an empty track just looks like a stray rule. */
+  .cat-progress.is-empty{ background:transparent; }
+  .cat-progress > i{
+    display:block; height:100%; width:0%;
+    background:var(--gold); border-radius:2px;
+    transition:width .25s ease;
   }
   .cat-item.disabled{ opacity:.45; }
 
+  /* Label sits in a fixed column so 範圍 and 題數 line up and their chips
+     start at the same x, instead of each row starting wherever its label ends. */
   .draw-row{
-    display:flex;
-    flex-wrap:wrap;
-    align-items:center;
+    display:grid;
+    grid-template-columns:32px 1fr;
+    align-items:start;
     gap:6px;
-    padding:6px 20px 2px;
+    padding:5px 18px 0;
   }
   .draw-label{
-    font-size:10.5px;
-    color:#c9c2a8;
-    letter-spacing:.5px;
-    margin-right:2px;
-    white-space:nowrap;
-  }
-  .draw-chip{
     font-size:11px;
-    padding:3px 10px;
-    border-radius:12px;
-    border:1px solid rgba(255,255,255,.3);
+    color:#a9bdb4;
+    letter-spacing:.5px;
+    white-space:nowrap;
+    padding-top:5px;
+  }
+  .draw-chips{ display:flex; flex-wrap:wrap; gap:6px; }
+  .draw-chip{
+    font-size:11.5px;
+    padding:4px 11px;
+    border-radius:20px;
+    border:1px solid rgba(255,255,255,.28);
     background:rgba(255,255,255,.05);
     color:#f2ece0;
     cursor:pointer;
     white-space:nowrap;
+    transition:background .15s, border-color .15s;
   }
-  .draw-chip:hover{ background:rgba(255,255,255,.18); }
+  .draw-chip:hover{ background:rgba(255,255,255,.18); border-color:rgba(255,255,255,.5); }
   .draw-chip.active{ background:var(--gold); border-color:var(--gold); color:#3a2c00; font-weight:600; }
   .redraw-btn{
-    font-size:11px;
-    padding:3px 10px;
-    border-radius:12px;
+    font-size:11.5px;
+    padding:4px 11px;
+    border-radius:20px;
     border:1px solid var(--gold);
     background:transparent;
     color:var(--gold);
     cursor:pointer;
     white-space:nowrap;
+    transition:background .15s, color .15s;
   }
   .redraw-btn:hover{ background:var(--gold); color:#3a2c00; }
+
+  /* Closes the drawer and drops you on the question page, so choosing a range
+     and a draw size ends in a deliberate "go" rather than leaving you looking
+     at the menu wondering whether anything happened. */
+  .cat-go{
+    display:block;
+    width:calc(100% - 36px);
+    margin:12px 18px 6px;
+    padding:10px 14px;
+    border:none;
+    border-radius:9px;
+    background:var(--gold);
+    color:#3a2c00;
+    font-size:13.5px;
+    font-weight:700;
+    letter-spacing:.3px;
+    cursor:pointer;
+    transition:filter .15s;
+  }
+  .cat-go:hover{ filter:brightness(1.08); }
+  .cat-go:focus-visible{ outline:2px solid #fff; outline-offset:2px; }
 
   /* ---------- Main ---------- */
   .main{ width:100%; display:flex; flex-direction:column; }
@@ -196,6 +250,13 @@
   .topbar-left{ display:flex; align-items:center; gap:14px; flex-wrap:wrap; }
   .topbar h1{ font-size:18px; margin:0; color:var(--jade-dark); }
   .controls{ display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
+  /* 繁體 / 简体 read as one either-or control, so they are joined into a
+     single segmented pill instead of two free-floating buttons. */
+  .seg{ display:flex; }
+  .seg .btn{ border-radius:0; margin-left:-1px; }
+  .seg .btn:first-child{ border-radius:8px 0 0 8px; margin-left:0; }
+  .seg .btn:last-child{ border-radius:0 8px 8px 0; }
+  .seg .btn.active{ position:relative; z-index:1; }
   .font-ctrl{ display:flex; gap:4px; align-items:center; padding-right:8px; border-right:1px solid var(--border); margin-right:4px; }
   .font-ctrl .btn{ padding:6px 10px; min-width:36px; }
   .btn{
@@ -216,19 +277,39 @@
   .btn.wrong-redo:hover:not(:disabled){ background:var(--wrong); color:#fff; }
   .btn:disabled{ opacity:.35; cursor:not-allowed; }
 
-  .content{ flex:1; padding:30px 48px; max-width:1200px; width:100%; margin:0 auto; box-sizing:border-box; }
-  .q-meta{ font-size:calc(13px * var(--fs-scale)); color:var(--muted); margin-bottom:10px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:6px 16px;}
-  .q-card{ background:var(--panel); border:1px solid var(--border); border-radius:14px; padding:26px 30px; }
-  .q-text-en{ font-size:calc(17px * var(--fs-scale)); line-height:1.6; font-weight:600; margin:0 0 4px; white-space:pre-wrap; }
+  /* Thin answered-progress bar pinned under the sticky topbar. Purely
+     graphical -- it carries no text of its own, the same counts are still
+     spelled out in the .q-meta row underneath. */
+  .progress-wrap{
+    position:sticky; top:var(--topbar-h,58px); z-index:4;
+    height:3px; background:var(--border);
+    max-width:1200px; width:100%; margin:0 auto;
+  }
+  .progress-bar{
+    height:100%; width:0%;
+    background:linear-gradient(90deg,var(--jade),var(--jade-dark));
+    transition:width .25s ease;
+  }
+
+  .content{ flex:1; padding:22px 48px 40px; max-width:1200px; width:100%; margin:0 auto; box-sizing:border-box; }
+  .q-meta{
+    font-size:calc(12.5px * var(--fs-scale)); color:var(--muted); margin-bottom:10px;
+    display:flex; align-items:center; flex-wrap:wrap; gap:4px 14px;
+  }
+  .q-meta #qPos{ font-variant-numeric:tabular-nums; font-weight:600; color:var(--text); }
+  .q-meta #answeredInfo{ margin-left:auto; font-variant-numeric:tabular-nums; }
+  .q-meta .meta-sep{ color:var(--border); }
+  .q-card{ background:var(--panel); border:1px solid var(--border); border-radius:14px; padding:22px 26px; }
+  .q-text-en{ font-size:calc(17px * var(--fs-scale)); line-height:1.55; font-weight:600; margin:0 0 4px; white-space:pre-wrap; }
   .q-text-zh{
-    font-size:calc(15px * var(--fs-scale)); line-height:1.7; color:var(--jade-dark);
-    margin:6px 0 20px; padding-top:10px; border-top:1px dashed var(--border);
+    font-size:calc(15px * var(--fs-scale)); line-height:1.65; color:var(--jade-dark);
+    margin:6px 0 14px; padding-top:8px; border-top:1px dashed var(--border);
     display:none; white-space:pre-wrap;
   }
-  .q-img{ max-width:100%; border-radius:8px; margin:10px 0 18px; border:1px solid var(--border); }
+  .q-img{ max-width:100%; border-radius:8px; margin:8px 0 14px; border:1px solid var(--border); }
   .q-context{
     background:#f2f8f6; border:1px solid var(--jade); border-radius:10px;
-    padding:14px 18px; margin:0 0 18px;
+    padding:12px 16px; margin:0 0 14px;
   }
   .q-context-label{
     font-size:calc(12px * var(--fs-scale)); font-weight:700; letter-spacing:.3px;
@@ -245,36 +326,69 @@
     border-radius:10px; padding:10px 16px; margin:0 0 14px;
     font-size:calc(13px * var(--fs-scale)); line-height:1.5;
   }
-  .options{ display:flex; flex-direction:column; gap:10px; }
-  .option{ border:1px solid var(--border); border-radius:10px; padding:12px 16px; cursor:pointer; transition:.15s; }
-  .option:hover{ border-color:var(--jade); background:#f2f8f6; }
-  .option .opt-label{
-    display:inline-block; width:22px; height:22px; line-height:22px; text-align:center;
-    border-radius:50%; border:1px solid var(--muted); font-size:12px; margin-right:10px;
+  /* Options sit in a two-column grid on wide screens so a 4-5 option question
+     fits on one screen instead of forcing a scroll. Questions whose options
+     are long paragraphs get .long-opts from render() and stay single-column,
+     where the extra reading width is worth more than the saved height. */
+  .options{ display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; margin-top:14px; }
+  .options.long-opts{ grid-template-columns:1fr; }
+  .option{
+    display:flex; align-items:flex-start; gap:10px;
+    border:1px solid var(--border); border-radius:10px; padding:11px 14px;
+    cursor:pointer; transition:border-color .15s, background .15s, box-shadow .15s;
   }
-  .option .opt-en{ font-size:calc(15px * var(--fs-scale)); }
+  .option:hover{ border-color:var(--jade); background:#f2f8f6; }
+  .option:focus-visible{ outline:2px solid var(--jade); outline-offset:2px; }
+  .option .opt-label{
+    flex:none;
+    width:22px; height:22px; line-height:22px; text-align:center;
+    border-radius:50%; border:1px solid var(--muted); font-size:12px;
+    font-variant-numeric:tabular-nums;
+  }
+  .opt-body{ flex:1; min-width:0; }
+  .option .opt-en{ font-size:calc(15px * var(--fs-scale)); line-height:1.5; }
   .option .opt-zh.style-inline{ font-size:calc(15px * var(--fs-scale)); color:var(--jade-dark); font-weight:600; margin-left:6px; display:none; }
-  .option .opt-zh.style-block{ font-size:calc(13.5px * var(--fs-scale)); color:var(--jade-dark); margin-top:6px; padding-left:32px; display:none; line-height:1.6; }
+  .option .opt-zh.style-block{ font-size:calc(13.5px * var(--fs-scale)); color:var(--jade-dark); margin-top:4px; display:none; line-height:1.55; }
   .option.answered{ cursor:default; }
-  .option.correct{ border-color:var(--correct); background:var(--correct-bg); }
+  .option.answered:hover{ border-color:var(--border); background:transparent; }
+  /* Answered-but-irrelevant options recede so the graded pair stands out. */
+  .option.answered.muted{ opacity:.55; }
+  .option.correct, .option.answered.correct:hover{
+    border-color:var(--correct); background:var(--correct-bg);
+    box-shadow:inset 3px 0 0 var(--correct);
+  }
   .option.correct .opt-label{ background:var(--correct); border-color:var(--correct); color:#fff; }
-  .option.wrong{ border-color:var(--wrong); background:var(--wrong-bg); }
+  .option.wrong, .option.answered.wrong:hover{
+    border-color:var(--wrong); background:var(--wrong-bg);
+    box-shadow:inset 3px 0 0 var(--wrong);
+  }
   .option.wrong .opt-label{ background:var(--wrong); border-color:var(--wrong); color:#fff; }
-  .mark{ float:right; font-weight:700; }
+  /* The mark rides in the flex row next to the text it grades, rather than
+     floating off to the far right edge of a 1200px-wide card. */
+  .mark{ flex:none; font-weight:700; line-height:1.5; }
   .mark.correct{ color:var(--correct); }
   .mark.wrong{ color:var(--wrong); }
 
-  .explain{ display:none; margin-top:20px; padding:18px 20px; background:#fbf8f0; border:1px solid var(--gold); border-radius:12px; }
+  .explain{ display:none; margin-top:16px; padding:15px 18px; background:#fbf8f0; border:1px solid var(--gold); border-radius:12px; }
   .explain.show{ display:block; }
-  .explain h4{ margin:0 0 8px; font-size:13px; color:var(--gold); text-transform:uppercase; letter-spacing:.5px; }
-  .explain .exp-en{ font-size:calc(14.5px * var(--fs-scale)); line-height:1.6; margin-bottom:10px; white-space:pre-wrap; }
-  .explain .exp-zh{ font-size:calc(14px * var(--fs-scale)); line-height:1.7; color:var(--jade-dark); white-space:pre-wrap; }
+  .explain h4{ margin:0 0 6px; font-size:13px; color:var(--gold); text-transform:uppercase; letter-spacing:.5px; }
+  .explain .exp-en{ font-size:calc(14.5px * var(--fs-scale)); line-height:1.55; margin-bottom:8px; white-space:pre-wrap; }
+  .explain .exp-zh{ font-size:calc(14px * var(--fs-scale)); line-height:1.65; color:var(--jade-dark); white-space:pre-wrap; }
 
-  .nav-row{ display:flex; justify-content:space-between; margin-top:22px; align-items:center; gap:10px; }
+  .nav-row{ display:flex; justify-content:space-between; margin-top:18px; align-items:center; gap:10px; }
 
   .placeholder{ padding:60px 20px; text-align:center; color:var(--muted); }
 
+  @media (prefers-reduced-motion: reduce){
+    .progress-bar, .cat-progress > i{ transition:none; }
+  }
+
   /* ---------- RWD ---------- */
+  /* Below ~900px a two-column option grid squeezes the text too hard, so it
+     folds back to a single column. */
+  @media (max-width: 900px){
+    .options{ grid-template-columns:1fr; }
+  }
   @media (max-width: 720px){
     .topbar{ padding:12px 16px; }
     .topbar h1{ font-size:16px; }
@@ -282,9 +396,10 @@
     .controls{ gap:6px; }
     .font-ctrl{ padding-right:6px; margin-right:2px; }
     .btn{ padding:6px 10px; font-size:12.5px; }
-    .content{ padding:18px 16px; max-width:100%; }
+    .content{ padding:16px 16px 32px; max-width:100%; }
     .q-card{ padding:18px 16px; }
     .q-meta{ font-size:calc(11.5px * var(--fs-scale)); gap:4px 10px; }
+    .q-meta #answeredInfo{ margin-left:0; }
   }
   @media (max-width: 480px){
     .sidebar{ width:100%; max-width:100vw; }
@@ -322,12 +437,16 @@
         <h1 data-zh="TCM 題庫練習 Quiz Bank">TCM 題庫練習 Quiz Bank</h1>
       </div>
       <div class="controls">
-        <button class="btn" id="btnHant" onclick="setScriptMode('hant')">繁體</button>
-        <button class="btn" id="btnHans" onclick="setScriptMode('hans')">简体</button>
+        <div class="seg">
+          <button class="btn" id="btnHant" onclick="setScriptMode('hant')">繁體</button>
+          <button class="btn" id="btnHans" onclick="setScriptMode('hans')">简体</button>
+        </div>
         <button class="btn wrong-redo" id="btnWrong" onclick="reviewWrong(currentCat)" disabled>錯題重做 (0)</button>
         <button class="btn restart" onclick="restartAll()" data-zh="重新開始 Restart">重新開始 Restart</button>
       </div>
     </div>
+
+    <div class="progress-wrap"><div class="progress-bar" id="progressBar"></div></div>
 
     <div class="content" id="content">
       <div class="q-meta">
@@ -356,8 +475,8 @@
         </div>
 
         <div class="nav-row">
-          <button class="btn" id="prevBtn" onclick="goPrev()" data-zh="← 上一題 Previous">← 上一題 Previous</button>
-          <button class="btn" id="nextBtn" onclick="goNext()" data-zh="下一題 Next →">下一題 Next →</button>
+          <button class="btn" id="prevBtn" onclick="goPrev()" data-zh="← 上一題 Previous" data-zh-title="鍵盤：← 上一題／A-E 或 1-5 選答案／空白鍵 收合題解">← 上一題 Previous</button>
+          <button class="btn" id="nextBtn" onclick="goNext()" data-zh="下一題 Next →" data-zh-title="鍵盤：→ 下一題／A-E 或 1-5 選答案／空白鍵 收合題解">下一題 Next →</button>
         </div>
       </div>
     </div>
@@ -370,6 +489,16 @@
   還是之後放到 GitHub Pages 之類的網站上（https://），都能正常讀到資料。
   之後要翻譯或修改題目/題解，只需要編輯這幾個 json 檔案裡的文字內容，
   不需要動這個 html 檔案。
+-->
+
+<!--
+  題庫資料放在同一個資料夾底下的 6 個 json 檔，用靜態的 <script src> 載入。
+  這裡刻意不用 fetch()，也不用 JS 動態插入 script：
+    * fetch()／XHR 讀取本機檔案會被瀏覽器擋掉（file:// 限制）。
+    * 由 JS 動態插入的 script 在部分瀏覽器上讀本機檔案同樣會被擋，
+      會出現「找不到題庫檔案」。
+  只有像下面這樣、由 html 解析器直接讀到的 script 標籤最保險，
+  不管是直接雙擊開啟（file://）還是放到網站上（https://）都能正常運作。
 -->
 <script src="Acupuncture.json"></script>
 <script src="Biomedicine.json"></script>
@@ -447,9 +576,26 @@ function applyStaticZh(){
 }
 let fontScale = 1;
 const FONT_STEP = 0.1, FONT_MIN = 0.7, FONT_MAX = 1.6;
+// Set by the Space shortcut so a reader can fold the explanation away; reset
+// whenever the question changes.
+let explainCollapsed = false;
 
 const state = {};
 let sidebarOpen = false;
+
+function setProgress(pct){
+  const bar = document.getElementById('progressBar');
+  if(bar) bar.style.width = Math.max(0, Math.min(100, pct)) + '%';
+}
+
+// The progress strip sticks directly beneath the topbar, whose height changes
+// when its controls wrap onto a second row, so the offset is measured rather
+// than hard-coded.
+function syncTopbarHeight(){
+  const tb = document.querySelector('.topbar');
+  if(tb) document.documentElement.style.setProperty('--topbar-h', tb.offsetHeight + 'px');
+}
+window.addEventListener('resize', syncTopbarHeight);
 
 function applySidebarState(){
   document.getElementById('sidebar').classList.toggle('open', sidebarOpen);
@@ -588,7 +734,7 @@ function makeState(cat, drawSize, rangeMode){
 }
 
 CAT_ORDER.forEach(k=>{
-  if(CATS[k].questions && CATS[k].questions.length){
+  if(CATS[k].questions && CATS[k].questions.length && !state[k]){
     state[k] = makeState(CATS[k], 'all', 'all');
   }
 });
@@ -607,17 +753,29 @@ function setScriptMode(mode){
   refresh();
 }
 
-function scoreText(key){
+function catStats(key){
   const cat = CATS[key];
   const st = state[key];
+  if(!cat || !st) return { correct:0, total:0, pct:0 };
   const total = st.order.length;
+  const answered = st.answers.filter(a=>a.answered).length;
   const correct = st.answers.filter((a,i)=>{
     if(!a.answered) return false;
     const q = cat.questions[st.order[i]];
     const opt = q.options.find(o=>o.key===a.chosenKey);
     return opt && opt.correct;
   }).length;
-  const pct = total ? Math.round((correct/total)*100) : 0;
+  return { correct, answered, total, pct: total ? Math.round((correct/total)*100) : 0 };
+}
+
+// Feeds the slim bar under each category name; same number the badge prints.
+function catPct(key){ return catStats(key).pct; }
+// An untouched category shows no bar at all -- an empty track next to the
+// row divider just reads as a second stray line.
+function catStarted(key){ return catStats(key).answered > 0; }
+
+function scoreText(key){
+  const { correct, total, pct } = catStats(key);
   return `${correct} ${zhDisplay('對')} / ${total} ${zhDisplay('題')} (${pct}%)`;
 }
 
@@ -636,11 +794,15 @@ function buildSidebar(){
     const header = document.createElement('div');
     header.className = 'cat-header';
     const label = document.createElement('div');
+    label.className = 'cat-name';
     const zhSpan = document.createElement('span');
     zhSpan.className = 'cat-zh';
     zhSpan.textContent = zhDisplay(cat.nameZh);
+    const enSpan = document.createElement('span');
+    enSpan.className = 'cat-en';
+    enSpan.textContent = cat.nameEn;
     label.appendChild(zhSpan);
-    label.appendChild(document.createTextNode(' ' + cat.nameEn));
+    label.appendChild(enSpan);
     const count = document.createElement('span');
     count.className = 'count';
     if(ready){
@@ -653,31 +815,49 @@ function buildSidebar(){
     }
     header.appendChild(label);
     header.appendChild(count);
+    if(ready){
+      // Always built (so render() can update it in place without rebuilding
+      // the whole list), but the track stays invisible until the category has
+      // actually been started.
+      const bar = document.createElement('div');
+      bar.className = 'cat-progress' + (catStarted(key) ? '' : ' is-empty');
+      bar.id = 'cattrack-' + key;
+      const fill = document.createElement('i');
+      fill.id = 'catbar-' + key;
+      fill.style.width = catPct(key) + '%';
+      bar.appendChild(fill);
+      header.appendChild(bar);
+    }
     header.addEventListener('click', ()=>selectCat(key));
     item.appendChild(header);
 
     if(ready && isActive){
-      const rangeRow = document.createElement('div');
-      rangeRow.className = 'draw-row';
-      const rangeLabel = document.createElement('span');
-      rangeLabel.className = 'draw-label';
-      rangeLabel.textContent = zhDisplay('範圍');
-      rangeRow.appendChild(rangeLabel);
+      // Each control row is <label><chips>, so the two labels line up in a
+      // column and every chip starts at the same left edge.
+      const makeRow = (labelText)=>{
+        const row = document.createElement('div');
+        row.className = 'draw-row';
+        const lab = document.createElement('span');
+        lab.className = 'draw-label';
+        lab.textContent = zhDisplay(labelText);
+        const chips = document.createElement('div');
+        chips.className = 'draw-chips';
+        row.appendChild(lab);
+        row.appendChild(chips);
+        item.appendChild(row);
+        return chips;
+      };
+
+      const rangeChips = makeRow('範圍');
       [['all','全部'],['first','前半段'],['second','後半段']].forEach(([val,label])=>{
         const chip = document.createElement('span');
         chip.className = 'draw-chip' + (state[key].rangeMode===val ? ' active' : '');
         chip.textContent = zhDisplay(label);
         chip.addEventListener('click', ev=>{ ev.stopPropagation(); setRange(key, val); });
-        rangeRow.appendChild(chip);
+        rangeChips.appendChild(chip);
       });
-      item.appendChild(rangeRow);
 
-      const drawRow = document.createElement('div');
-      drawRow.className = 'draw-row';
-      const sizeLabel = document.createElement('span');
-      sizeLabel.className = 'draw-label';
-      sizeLabel.textContent = zhDisplay('題數');
-      drawRow.appendChild(sizeLabel);
+      const drawChips = makeRow('題數');
       const poolLen = poolIndices(cat, state[key].rangeMode).length;
       const sizes = DRAW_SIZES.filter(s=>s <= poolLen);
       sizes.push('all');
@@ -686,15 +866,21 @@ function buildSidebar(){
         chip.className = 'draw-chip' + (state[key].drawSize===s ? ' active' : '');
         chip.textContent = s==='all' ? (zhDisplay('全部 ') + poolLen) : (s + zhDisplay(' 題'));
         chip.addEventListener('click', ev=>{ ev.stopPropagation(); setDraw(key, s); });
-        drawRow.appendChild(chip);
+        drawChips.appendChild(chip);
       });
       const redrawBtn = document.createElement('span');
       redrawBtn.className = 'redraw-btn';
       redrawBtn.textContent = '🔀 ' + zhDisplay('重抽');
       redrawBtn.title = zhDisplay('重新隨機抽題');
       redrawBtn.addEventListener('click', ev=>{ ev.stopPropagation(); redraw(key); });
-      drawRow.appendChild(redrawBtn);
-      item.appendChild(drawRow);
+      drawChips.appendChild(redrawBtn);
+
+      const goBtn = document.createElement('button');
+      goBtn.className = 'cat-go';
+      goBtn.type = 'button';
+      goBtn.textContent = zhDisplay('開始作答') + ' Start';
+      goBtn.addEventListener('click', ev=>{ ev.stopPropagation(); startCat(key); });
+      item.appendChild(goBtn);
     }
 
     wrap.appendChild(item);
@@ -702,6 +888,7 @@ function buildSidebar(){
 }
 
 function refresh(){
+  explainCollapsed = false;
   buildSidebar();
   render();
   applyStaticZh();
@@ -710,6 +897,16 @@ function refresh(){
 function selectCat(key){
   currentCat = key;
   refresh();
+}
+
+// The drawer's confirm action. The range/size chips already applied as they
+// were clicked, so this deliberately does NOT re-draw (pressing it without
+// changing anything must never wipe your progress) -- it just closes the menu
+// and puts the question page in front of you.
+function startCat(key){
+  if(key !== currentCat) selectCat(key);
+  closeSidebar();
+  window.scrollTo({ top:0, behavior:'auto' });
 }
 
 function setDraw(key, size){
@@ -741,10 +938,11 @@ function redraw(key){
 function render(){
   const cat = CATS[currentCat];
   if(!cat || !cat.questions){
-    const msg = cat && cat.loadError
+    const inner = cat && cat.loadError
       ? `${zhDisplay('找不到題庫檔案「')}${cat.file}${zhDisplay('」，請確認這個 json 檔案和 html 放在同一個資料夾底下。')}<br>Could not load "${cat.file}" — make sure it sits next to this html file.`
       : `${zhDisplay('這個分類還在建置中，敬請期待。')}<br>This category is not built yet.`;
-    document.getElementById('content').innerHTML = '<div class="placeholder">'+msg+'</div>';
+    document.getElementById('content').innerHTML = '<div class="placeholder">'+inner+'</div>';
+    setProgress(0);
     const wb = document.getElementById('btnWrong');
     wb.textContent = zhDisplay('錯題重做') + ' (0)';
     wb.disabled = true;
@@ -767,6 +965,7 @@ function render(){
   const answeredCount = st.answers.filter(a=>a.answered).length;
   document.getElementById('answeredInfo').textContent =
     `${zhDisplay('已作答')} ${answeredCount} / ${st.order.length} ${zhDisplay('題')}`;
+  setProgress(st.order.length ? (answeredCount / st.order.length) * 100 : 0);
   const qc = document.getElementById('qContext');
   if(q.context_en){
     qc.style.display = 'block';
@@ -793,11 +992,26 @@ function render(){
   document.getElementById('qZh').style.display = ansSt.answered ? 'block' : 'none';
 
   const img = document.getElementById('qImg');
-  if(q.image){ img.src = q.image; img.style.display='block'; } else { img.style.display='none'; }
+  // Some source rows carry the string "None"/"null" rather than a real empty
+  // value; treating those as a path would render a broken-image icon.
+  const imgSrc = q.image && !['none','null','undefined',''].includes(String(q.image).trim().toLowerCase())
+    ? q.image : null;
+  if(imgSrc){ img.src = imgSrc; img.style.display='block'; } else { img.removeAttribute('src'); img.style.display='none'; }
 
   const styleClass = cat.optStyle === 'inline' ? 'style-inline' : 'style-block';
   const wrap = document.getElementById('options');
   wrap.innerHTML = '';
+
+  // Two columns only pay off for short options. Once any option runs long,
+  // half-width columns would just trade vertical scrolling for cramped,
+  // ragged text, so those questions stay full width.
+  const longest = q.options.reduce((m,o)=>{
+    const en = (o.en || '').length;
+    const zh = (zhOptText(o) || '').length * 1.7; // CJK glyphs eat ~2x the width
+    return Math.max(m, en, zh);
+  }, 0);
+  wrap.classList.toggle('long-opts', longest > 68 || q.options.length > 6);
+
   q.options.forEach(o=>{
     const div = document.createElement('div');
     div.className = 'option';
@@ -806,8 +1020,7 @@ function render(){
     const zhHtml = zhOptText(o) ? ('<'+zhTag+' class="opt-zh '+styleClass+'"></'+zhTag+'>') : '';
     div.innerHTML =
       '<span class="opt-label">'+o.key+'</span>' +
-      '<span class="opt-en"></span>' +
-      zhHtml +
+      '<span class="opt-body"><span class="opt-en"></span>' + zhHtml + '</span>' +
       '<span class="mark"></span>';
     div.querySelector('.opt-en').textContent = o.en;
     const zhEl = div.querySelector('.opt-zh');
@@ -825,6 +1038,8 @@ function render(){
         div.classList.add('wrong');
         div.querySelector('.mark').textContent = '✗';
         div.querySelector('.mark').className = 'mark wrong';
+      } else {
+        div.classList.add('muted');
       }
     }
     wrap.appendChild(div);
@@ -834,7 +1049,7 @@ function render(){
   if(ansSt.answered && (q.exp_en || q.exp_hant)){
     document.getElementById('expEn').textContent = q.exp_en;
     document.getElementById('expZh').textContent = zhExpText(q);
-    explain.classList.add('show');
+    explain.classList.toggle('show', !explainCollapsed);
   } else {
     explain.classList.remove('show');
   }
@@ -844,6 +1059,10 @@ function render(){
 
   const scoreEl = document.getElementById('score-'+currentCat);
   if(scoreEl) scoreEl.textContent = scoreText(currentCat);
+  const catBar = document.getElementById('catbar-'+currentCat);
+  if(catBar) catBar.style.width = catPct(currentCat) + '%';
+  const catTrack = document.getElementById('cattrack-'+currentCat);
+  if(catTrack) catTrack.classList.toggle('is-empty', !catStarted(currentCat));
 
   const wrongCount = countWrong(currentCat);
   const wb = document.getElementById('btnWrong');
@@ -857,11 +1076,59 @@ function selectOption(key){
   if(ansSt.answered) return;
   ansSt.answered = true;
   ansSt.chosenKey = key;
+  explainCollapsed = false;
   render();
 }
 
-function goPrev(){ const s=state[currentCat]; if(s.index>0){ s.index--; render(); } }
-function goNext(){ const s=state[currentCat]; if(s.index<s.order.length-1){ s.index++; render(); } }
+function goPrev(){ const s=state[currentCat]; if(s && s.index>0){ s.index--; explainCollapsed=false; render(); } }
+function goNext(){ const s=state[currentCat]; if(s && s.index<s.order.length-1){ s.index++; explainCollapsed=false; render(); } }
+
+// ---------- keyboard shortcuts ----------
+// ← / →            previous / next question
+// A-E or 1-5       pick that option
+// Space            collapse or re-open the explanation
+// Esc              close the category drawer (handled above)
+// Everything is a no-op while the drawer is open or a modifier key is held,
+// so nothing here can steal a browser or OS shortcut.
+document.addEventListener('keydown', e=>{
+  if(sidebarOpen) return;
+  if(e.ctrlKey || e.metaKey || e.altKey) return;
+  const tag = (e.target && e.target.tagName || '').toLowerCase();
+  if(tag === 'input' || tag === 'textarea' || (e.target && e.target.isContentEditable)) return;
+
+  const st = state[currentCat];
+  const cat = CATS[currentCat];
+  if(!st || !cat || !cat.questions) return;
+
+  if(e.key === 'ArrowRight'){ e.preventDefault(); goNext(); return; }
+  if(e.key === 'ArrowLeft'){ e.preventDefault(); goPrev(); return; }
+
+  if(e.key === ' ' || e.code === 'Space'){
+    const ansSt = st.answers[st.index];
+    const q = cat.questions[st.order[st.index]];
+    if(ansSt && ansSt.answered && (q.exp_en || q.exp_hant)){
+      e.preventDefault();
+      explainCollapsed = !explainCollapsed;
+      render();
+    }
+    return;
+  }
+
+  const ansSt = st.answers[st.index];
+  if(!ansSt || ansSt.answered) return;
+  const q = cat.questions[st.order[st.index]];
+
+  // Letter keys map to the option's own label; digits map by position, so a
+  // bank that labels its options a/b/c or 1/2/3 still answers the same way.
+  let target = null;
+  if(/^[a-zA-Z]$/.test(e.key)){
+    const want = e.key.toUpperCase();
+    target = q.options.find(o => String(o.key).trim().toUpperCase() === want);
+  } else if(/^[1-9]$/.test(e.key)){
+    target = q.options[Number(e.key) - 1];
+  }
+  if(target){ e.preventDefault(); selectOption(target.key); }
+});
 
 function restartAll(){
   Object.keys(state).forEach(k=>{
@@ -891,6 +1158,7 @@ document.getElementById('btnHant').classList.toggle('active', scriptMode === 'ha
 document.getElementById('btnHans').classList.toggle('active', scriptMode === 'hans');
 applyFontScale();
 applySidebarState();
+syncTopbarHeight();
 buildSidebar();
 render();
 applyStaticZh();
