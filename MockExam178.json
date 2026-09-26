@@ -4223,7 +4223,7 @@ window.TCM_DATA.mock178 = {
     },
     {
       "number": 125,
-      "question_en": "A practitioner is treating a patient who presents with shoulder and neck pain.\nDuring a treatment, a few drops of blood is spilled onto the treatment table. Which four of the following cleaning\nprocedures are recommended when managing this situation? (Select 4)",
+      "question_en": "A practitioner is treating a patient who presents with shoulder and neck pain.\nDuring a treatment, a few drops of blood is spilled onto the treatment table. Which four of the following cleaning procedures are recommended when managing this situation? (Select 4)",
       "question_hant": "執業師正在治療一位肩頸痛患者。\n在治療過程中，有幾滴血濺到了治療床上。在處理這種情況時，建議採取以下哪四種清潔步驟？",
       "image": null,
       "options": [
@@ -4281,7 +4281,7 @@ window.TCM_DATA.mock178 = {
     },
     {
       "number": 126,
-      "question_en": "A practitioner is treating a patient who presents with shoulder and neck pain.\nThe practitioner uses Cupping (Ba Guan) for this patient and then cleans the glass cups. Which of the following solution\nexposure times is appropriate when using a high-level disinfectant?",
+      "question_en": "A practitioner is treating a patient who presents with shoulder and neck pain.\nThe practitioner uses Cupping (Ba Guan) for this patient and then cleans the glass cups. Which of the following solution exposure times is appropriate when using a high-level disinfectant?",
       "question_hant": "執業師正在治療一位肩頸痛患者。\n執業醫師對患者實施拔罐治療後需要消毒玻璃罐。如果使用高等級消毒液，下述哪個浸泡時間是正確的？",
       "image": null,
       "options": [
@@ -4315,7 +4315,7 @@ window.TCM_DATA.mock178 = {
     },
     {
       "number": 127,
-      "question_en": "A practitioner is treating a patient who presents with shoulder and neck pain.\nThe practitioner prescribes a herbal formula to treat this patient's condition. Which of the two following situations should\nthe patient immediately contact the practitioner? (Select 2)",
+      "question_en": "A practitioner is treating a patient who presents with shoulder and neck pain.\nThe practitioner prescribes a herbal formula to treat this patient's condition. Which of the two following situations should the patient immediately contact the practitioner? (Select 2)",
       "question_hant": "執業師正在治療一位肩頸痛患者。\n執業醫師開了中藥方來治療患者。在以下哪兩種情況下，患者應該立刻聯繫執業醫師？",
       "image": null,
       "options": [
@@ -4355,7 +4355,7 @@ window.TCM_DATA.mock178 = {
     },
     {
       "number": 128,
-      "question_en": "A 48-year-old female patient complains of anxiety for a few years. She has been taking various anti-anxiety medications\nwhich provided little improvement.\nPatient information:\n* hot sensation at the forehead, the lateral sides of the arms to the index finger, and on the front of the thighs and\nknees\n* cold sensation in the lower back, the calves and the feet\n* often feels hungry, but no desire to eat\n* dream-disturbed sleep\n* palpitation\n* frequent urination\n* often constipated\n* thin body\n+ dull and pale complexion\n* Tongue: red, yellow coating peeled in the middle\n+ Pulse: Deep (Chen), Thready (xi) and Rapid (Shuo)\nBased on the tongue presentation, select two of the following pathogenic factors that are most likely associated with this\npatient. (Select 2)",
+      "question_en": "A 48-year-old female patient complains of anxiety for a few years. She has been taking various anti-anxiety medications which provided little improvement.\nPatient information:\n* hot sensation at the forehead, the lateral sides of the arms to the index finger, and on the front of the thighs and knees\n* cold sensation in the lower back, the calves and the feet\n* often feels hungry, but no desire to eat\n* dream-disturbed sleep\n* palpitation\n* frequent urination\n* often constipated\n* thin body\n* dull and pale complexion\n* Tongue: red, yellow coating peeled in the middle\n* Pulse: Deep (Chen), Thready (xi) and Rapid (Shuo)\nBased on the tongue presentation, select two of the following pathogenic factors that are most likely associated with this patient. (Select 2)",
       "question_hant": "一名48歲女性主訴數年來患有焦慮。她一直在服用各種抗焦慮藥物但效果甚微。\n患者資料：\n前額、雙臂外側至食指、大腿前側及雙膝有熱感\n腰部、小腿和雙足有冷感\n經常感到飢餓，但無食欲\n睡眠多夢\n心悸\n尿頻\n經常便秘\n身體消瘦\n面色暗淡無華\n舌：紅，苔黃中剝\n脈：沉細數\n根據舌象，選擇以下兩項與該患者相關的病因。",
       "image": null,
       "options": [
@@ -4395,7 +4395,7 @@ window.TCM_DATA.mock178 = {
     },
     {
       "number": 129,
-      "question_en": "A 48-year-old female patient complains of anxiety for a few years. She has been taking various anti-anxiety medications\nwhich provided little improvement.\nPatient information:\n* hot sensation at the forehead, the lateral sides of the arms to the index finger, and on the front of the thighs and\nknees\n* cold sensation in the lower back, the calves and the feet\noften feels hungry, but no desire to eat\n«© dream-disturbed sleep\n* palpitation\n* frequent urination\n* often constipated\n© thin body\n* dull and pale complexion\n* Tongue: red, yellow coating peeled in the middle\n* Pulse: Deep (Chen), Thready (Xi) and Rapid (Shuo)\nSelect two deficiencies that correspond with this patient's face and body appearance. (Select 2)\noa",
+      "question_en": "A 48-year-old female patient complains of anxiety for a few years. She has been taking various anti-anxiety medications which provided little improvement.\nPatient information:\n* hot sensation at the forehead, the lateral sides of the arms to the index finger, and on the front of the thighs and knees\n* cold sensation in the lower back, the calves and the feet\n* often feels hungry, but no desire to eat\n* dream-disturbed sleep\n* palpitation\n* frequent urination\n* often constipated\n* thin body\n* dull and pale complexion\n* Tongue: red, yellow coating peeled in the middle\n* Pulse: Deep (Chen), Thready (xi) and Rapid (Shuo)\nSelect two deficiencies that correspond with this patient's face and body appearance. (Select 2)",
       "question_hant": "一名48歲女性主訴數年來患有焦慮。她一直在服用各種抗焦慮藥物但效果甚微。\n患者資料：\n前額、雙臂外側至食指、大腿前側及雙膝有熱感\n腰部、小腿和雙足有冷感\n經常感到飢餓，但無食欲\n睡眠多夢\n心悸\n尿頻\n經常便秘\n身體消瘦\n面色暗淡無華\n舌：紅，苔黃中剝\n脈：沉細數\n根據患者面部和身體的體徵，選擇最有可能的兩項虛證。",
       "image": null,
       "options": [
@@ -4429,7 +4429,7 @@ window.TCM_DATA.mock178 = {
     },
     {
       "number": 130,
-      "question_en": "A 48-year-old female patient complains of anxiety for a few years. She has been taking various anti-anxiety medications\nwhich provided little improvement.\nPatient information:\nhot sensation at the forehead, the lateral sides of the arms to the index finger, and on the front of the thighs and\nknees\n* cold sensation in the lower back, the calves and the feet\n* often feels hungry, but no desire to eat\n* dream-disturbed sleep\n* palpitation\n* frequent urination\n* often constipated\n© thin body\n* dull and pale complexion\n* Tongue: red, yellow coating peeled in the middle\n* Pulse: Deep (Chen), Thready (xi) and Rapid (Shuo)\nSelect two of the following Meridians that are most closely related to this patient's hot sensations. (Select 2)",
+      "question_en": "A 48-year-old female patient complains of anxiety for a few years. She has been taking various anti-anxiety medications which provided little improvement.\nPatient information:\n* hot sensation at the forehead, the lateral sides of the arms to the index finger, and on the front of the thighs and knees\n* cold sensation in the lower back, the calves and the feet\n* often feels hungry, but no desire to eat\n* dream-disturbed sleep\n* palpitation\n* frequent urination\n* often constipated\n* thin body\n* dull and pale complexion\n* Tongue: red, yellow coating peeled in the middle\n* Pulse: Deep (Chen), Thready (xi) and Rapid (Shuo)\nSelect two of the following Meridians that are most closely related to this patient's hot sensations. (Select 2)",
       "question_hant": "一名48歲女性主訴數年來患有焦慮。她一直在服用各種抗焦慮藥物但效果甚微。\n患者資料：\n前額、雙臂外側至食指、大腿前側及雙膝有熱感\n腰部、小腿和雙足有冷感\n經常感到飢餓，但無食欲\n睡眠多夢\n心悸\n尿頻\n經常便秘\n身體消瘦\n面色暗淡無華\n舌：紅，苔黃中剝\n脈：沉細數\n選擇兩條與患者發熱感覺最密切相關的經脈。",
       "image": null,
       "options": [
@@ -4463,7 +4463,7 @@ window.TCM_DATA.mock178 = {
     },
     {
       "number": 131,
-      "question_en": "A 48-year-old female patient complains of anxiety for a few years. She has been taking various anti-anxiety medications\nWhich provided little improvement.\nPatient information:\nhot sensation at the forehead, the lateral sides of the arms to the index finger, and on the front of the thighs and\nknees\n* cold sensation in the lower back, the calves and the feet\n* often feels hungry, but no desire to eat\n* dream-disturbed sleep\n* palpitation\n* frequent urination\n* often constipated\n© thin body\n* dull and pale complexion\n* Tongue: red, yellow coating peeled in the middle\n* Pulse: Deep (Chen), Thready (Xi) and Rapid (Shuo)\nSelect two of the following Zang Fu Organs that are most likely deficient in this case, (Select 2)",
+      "question_en": "A 48-year-old female patient complains of anxiety for a few years. She has been taking various anti-anxiety medications which provided little improvement.\nPatient information:\n* hot sensation at the forehead, the lateral sides of the arms to the index finger, and on the front of the thighs and knees\n* cold sensation in the lower back, the calves and the feet\n* often feels hungry, but no desire to eat\n* dream-disturbed sleep\n* palpitation\n* frequent urination\n* often constipated\n* thin body\n* dull and pale complexion\n* Tongue: red, yellow coating peeled in the middle\n* Pulse: Deep (Chen), Thready (xi) and Rapid (Shuo)\nSelect two of the following Zang Fu Organs that are most likely deficient in this case, (Select 2)",
       "question_hant": "一名48歲女性主訴數年來患有焦慮。她一直在服用各種抗焦慮藥物但效果甚微。\n患者資料：\n前額、雙臂外側至食指、大腿前側及雙膝有熱感\n腰部、小腿和雙足有冷感\n經常感到飢餓，但無食欲\n睡眠多夢\n心悸\n尿頻\n經常便秘\n身體消瘦\n面色暗淡無華\n舌：紅，苔黃中剝\n脈：沉細數\n在此病例中，選擇兩個最有可能是虛證的臟腑。",
       "image": null,
       "options": [
@@ -4497,7 +4497,7 @@ window.TCM_DATA.mock178 = {
     },
     {
       "number": 132,
-      "question_en": "A 48-year-old female patient complains of anxiety for a few years. She has been taking various anti-anxiety medications\nwhich provided little improvement.\nPatient information:\nhot sensation at the forehead, the lateral sides of the arms to the index finger, and on the front of the thighs and\nknees\n+ cold sensation in the lower back, the calves and the feet\noften feels hungry, but no desire to eat\n© dream-disturbed sleep\n* palpitation\n* frequent urination\n* often constipated\n© thin body\n* dull and pale complexion\n* Tongue: red, yellow coating peeled in the middle\n* Pulse: Deep (Chen), Thready (xi) and Rapid (Shuo)\nThe practitioner uses KI 6 (Zhaohai) to treat this patient's dream-disturbed sleep. Select two of the following actions that\njustify the use of this point. (Select 2)",
+      "question_en": "A 48-year-old female patient complains of anxiety for a few years. She has been taking various anti-anxiety medications which provided little improvement.\nPatient information:\n* hot sensation at the forehead, the lateral sides of the arms to the index finger, and on the front of the thighs and knees\n* cold sensation in the lower back, the calves and the feet\n* often feels hungry, but no desire to eat\n* dream-disturbed sleep\n* palpitation\n* frequent urination\n* often constipated\n* thin body\n* dull and pale complexion\n* Tongue: red, yellow coating peeled in the middle\n* Pulse: Deep (Chen), Thready (xi) and Rapid (Shuo)\nThe practitioner uses KI 6 (Zhaohai) to treat this patient's dream-disturbed sleep. Select two of the following actions that justify the use of this point. (Select 2)",
       "question_hant": "一名48歲女性主訴數年來患有焦慮。她一直在服用各種抗焦慮藥物但效果甚微。\n患者資料：\n前額、雙臂外側至食指、大腿前側及雙膝有熱感\n腰部、小腿和雙足有冷感\n經常感到飢餓，但無食欲\n睡眠多夢\n心悸\n尿頻\n經常便秘\n身體消瘦\n面色暗淡無華\n舌：紅，苔黃中剝\n脈：沉細數\n執業醫師選用照海 (KI 6) 治療該患者的夢擾睡眠。選擇下列兩項功效以證明該穴位的使用是合理的。",
       "image": null,
       "options": [
@@ -4531,7 +4531,7 @@ window.TCM_DATA.mock178 = {
     },
     {
       "number": 133,
-      "question_en": "A 48-year-old female patient complains of anxiety for a few years. She has been taking various anti-anxiety medications\nwhich provided little improvement.\nPatient information:\nhot sensation at the forehead, the lateral sides of the arms to the index finger, and on the front of the thighs and\nknees\n* cold sensation in the lower back, the calves and the feet\n* often feels hungry, but no desire to eat\n* dream-disturbed sleep\n* palpitation\n* frequent urination\n* often constipated\n© thin body\n* dull and pale complexion\n* Tongue: red, yellow coating peeled in the middle\n* Pulse: Deep (Chen), Thready (Xi) and Rapid (Shuo)\nWhich of the following Front-Mu points is most appropriate to treat this patient's palpitations?",
+      "question_en": "A 48-year-old female patient complains of anxiety for a few years. She has been taking various anti-anxiety medications which provided little improvement.\nPatient information:\n* hot sensation at the forehead, the lateral sides of the arms to the index finger, and on the front of the thighs and knees\n* cold sensation in the lower back, the calves and the feet\n* often feels hungry, but no desire to eat\n* dream-disturbed sleep\n* palpitation\n* frequent urination\n* often constipated\n* thin body\n* dull and pale complexion\n* Tongue: red, yellow coating peeled in the middle\n* Pulse: Deep (Chen), Thready (xi) and Rapid (Shuo)\nWhich of the following Front-Mu points is most appropriate to treat this patient's palpitations?",
       "question_hant": "一名48歲女性主訴數年來患有焦慮。她一直在服用各種抗焦慮藥物但效果甚微。\n患者資料：\n前額、雙臂外側至食指、大腿前側及雙膝有熱感\n腰部、小腿和雙足有冷感\n經常感到飢餓，但無食欲\n睡眠多夢\n心悸\n尿頻\n經常便秘\n身體消瘦\n面色暗淡無華\n舌：紅，苔黃中剝\n脈：沉細數\n以下哪個募穴最適合治療該患者的心悸？",
       "image": null,
       "options": [
@@ -4565,9 +4565,9 @@ window.TCM_DATA.mock178 = {
     },
     {
       "number": 134,
-      "question_en": "A32- year-old male complains of pain below the rib cage that started when he changed jobs six months ago. He is findi\nthe adjustment stressful and is feeling irritable.\nPatient Information:\n- abdominal distention painful diarrhea which is relieved after defecation\nalternating diarrhea and constipation\n- flatulence\nthirst\n- fed facial complexion\n- Pulse: Wiry (Xuan) and Thready (Xi)\nUsing the tongue image above, select two tongue bodies and two tongue coatings that are most relevant to this case.\n(Select 4)",
+      "question_en": "A 32-year-old male complains of pain below the rib cage that started when he changed jobs six months ago. He is finding the adjustment stressful and is feeling irritable.\nPatient information:\n* abdominal distention\n* painful diarrhea which is relieved after defecation\n* alternating diarrhea and constipation\n* flatulence\n* thirst\n* red facial complexion\n* Pulse: Wiry (Xuan) and Thready (xi)\nUsing the tongue image above, select two tongue bodies and two tongue coatings that are most relevant to this case. (Select 4)",
       "question_hant": "一名32 歲男士主訴六個月前更換新工作後出現脅下疼痛，他對工作的變化感覺很有壓力而且感到很煩躁。\n患者資料：\n腹脹\n腹痛而瀉，瀉後疼減\n腹瀉與便秘交替出現\n失氣\n口渴\n面赤\n脈：弦細\n根據以上舌象，選擇與本病例最相關的兩種舌型和兩種舌苔。",
-      "image": null,
+      "image": "data:image/jpeg;base64,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",
       "options": [
         {
           "key": "A",
@@ -4623,7 +4623,7 @@ window.TCM_DATA.mock178 = {
     },
     {
       "number": 135,
-      "question_en": "A32- year-old male complains of pain below the rib cage that started when he changed jobs six months ago. He is finding\nthe adjustment stressful and is feeling irritable.\nPatient information:\n+ abdominal distention\n+ painful diarrhea which is relieved after defecation\n+ alternating diarrhea and constipation\n+ flatulence\n+ thirst\n+ red facial complexion\n+ Pulse: Wiry (Xuan) and Thready (xi)\nThe practitioner considers Si Ni San (Frigid Extremities Powder) as a base formula to treat this patient. Select four of the\nfollowing herbs used as ingredients of Si Ni San (Frigid Extremities Powder). (Select 4)\n10 Fu Ling (Poria)",
+      "question_en": "A 32-year-old male complains of pain below the rib cage that started when he changed jobs six months ago. He is finding the adjustment stressful and is feeling irritable.\nPatient information:\n* abdominal distention\n* painful diarrhea which is relieved after defecation\n* alternating diarrhea and constipation\n* flatulence\n* thirst\n* red facial complexion\n* Pulse: Wiry (Xuan) and Thready (xi)\nThe practitioner considers Si Ni San (Frigid Extremities Powder) as a base formula to treat this patient. Select four of the following herbs used as ingredients of Si Ni San (Frigid Extremities Powder). (Select 4)",
       "question_hant": "一名32 歲男士主訴六個月前更換新工作後出現脅下疼痛，他對工作的變化感覺很有壓力而且感到很煩躁。\n患者資料：\n腹脹\n腹痛而瀉，瀉後疼減\n腹瀉與便秘交替出現\n失氣\n口渴\n面赤\n脈：弦細\n中醫師擬用四逆散做為治療該患者的基礎方劑。選擇下列四味組成四逆散的中藥。",
       "image": null,
       "options": [
@@ -4681,7 +4681,7 @@ window.TCM_DATA.mock178 = {
     },
     {
       "number": 136,
-      "question_en": "A 32- year-old male complains of pain below the rib cage that started when he changed jobs six months ago. He is finding\nthe adjustment stressful and is feeling irritable.\nPatient Information:\n© abdominal distention\n* painful diarrhea which is relieved after defecation\nalternating diarrhea and constipation\n* flatulence\n© thirst\nred facial complexion\n* Pulse: Wiry (Xuan) and Thready (Xi)\nThe practitioner decided to combine Tong Xie Yao Fang (Important Formula for Painful Diarrhea) to treat this patient.\nWhat processing method is needed for most of the herbs in this formula?",
+      "question_en": "A 32-year-old male complains of pain below the rib cage that started when he changed jobs six months ago. He is finding the adjustment stressful and is feeling irritable.\nPatient information:\n* abdominal distention\n* painful diarrhea which is relieved after defecation\n* alternating diarrhea and constipation\n* flatulence\n* thirst\n* red facial complexion\n* Pulse: Wiry (Xuan) and Thready (xi)\nThe practitioner decided to combine Tong Xie Yao Fang (Important Formula for Painful Diarrhea) to treat this patient.\nWhat processing method is needed for most of the herbs in this formula?",
       "question_hant": "一名32 歲男士主訴六個月前更換新工作後出現脅下疼痛，他對工作的變化感覺很有壓力而且感到很煩躁。\n患者資料：\n腹脹\n腹痛而瀉，瀉後疼減\n腹瀉與便秘交替出現\n失氣\n口渴\n面赤\n脈：弦細\n執業中醫師決定加入痛瀉要方治療該患者。方中大多數中藥需用哪種炮製方法？",
       "image": null,
       "options": [
@@ -4715,7 +4715,7 @@ window.TCM_DATA.mock178 = {
     },
     {
       "number": 137,
-      "question_en": "A23-year-old woman has had lumps in her breasts for several years. In the past six months, the number of lumps has\nincreased.\nPatient information:\nlumps are varying in size from kidney bean to a small egg\n© lumps are hard with unclear margins\n© lumps are slightly painful before her period\n* intolerance to cold and has cold limbs\n* alusterless complexion\n* painful menstruation with dark purple menses\n© clear and profuse urine\n* Tongue: pale with a thin greasy coating\n* Pulse: Deep (Chen) and Thready (xi)\nSelect four of the following Meridians that are directly associated with the breasts.(Select 4)",
+      "question_en": "A 23-year-old woman has had lumps in her breasts for several years. In the past six months, the number of lumps has increased.\nPatient information:\n* Lumps are varying in size from kidney bean to a small egg\n* lumps are hard with unclear margins\n* lumps are slightly painful before her period\n* intolerance to cold and has cold limbs\n* a lusterless complexion\n* painful menstruation with dark purple menses\n* clear and profuse urine\n* Tongue: pale with a thin greasy coating\n* Pulse: Deep (Chen) and Thready (xi)\nSelect four of the following Meridians that are directly associated with the breasts.(Select 4)",
       "question_hant": "一名23歲女性雙側乳房腫塊數年，近六個月來腫塊數量有所增加。\n患者資料：\n腫塊大小不一，從芸豆至小雞蛋大\n腫塊堅硬，邊緣不清\n月經前腫塊稍痛\n畏寒肢冷\n面色晦暗\n痛經伴經血深紫\n小便清長\n舌：淡，苔薄膩\n脈：沉細\n根據經絡循行，選擇四條與乳房直接相關的經脈。",
       "image": null,
       "options": [
@@ -4773,7 +4773,7 @@ window.TCM_DATA.mock178 = {
     },
     {
       "number": 138,
-      "question_en": "23-year-old woman has had lumps in her breasts for several years. In the past six months, the number of lumps has\nincreased.\nPatient information:\nlumps are varying in size from kidney bean to a small egg\n© lumps are hard with unclear margins\n© lumps are slightly painful before her period\n* intolerance to cold and has cold limbs\n* alusterless complexion\n* painful menstruation with dark purple menses\n© clear and profuse urine\nTongue: pale with a thin greasy coating\n* Pulse: Deep (Chen) and Thready (xi)\nEnglish ,\nSelect four of the following herbs that best address this patient's chief complaint. (Select 4)",
+      "question_en": "A 23-year-old woman has had lumps in her breasts for several years. In the past six months, the number of lumps has increased.\nPatient information:\n* Lumps are varying in size from kidney bean to a small egg\n* lumps are hard with unclear margins\n* lumps are slightly painful before her period\n* intolerance to cold and has cold limbs\n* a lusterless complexion\n* painful menstruation with dark purple menses\n* clear and profuse urine\n* Tongue: pale with a thin greasy coating\n* Pulse: Deep (Chen) and Thready (xi)\nSelect four of the following herbs that best address this patient's chief complaint. (Select 4)",
       "question_hant": "一名23歲女性雙側乳房腫塊數年，近六個月來腫塊數量有所增加。\n患者資料：\n腫塊大小不一，從芸豆至小雞蛋大\n腫塊堅硬，邊緣不清\n月經前腫塊稍痛\n畏寒肢冷\n面色晦暗\n痛經伴經血深紫\n小便清長\n舌：淡，苔薄膩\n脈：沉細\n選擇下列四味最針對患者主訴的中藥。",
       "image": null,
       "options": [
@@ -4831,7 +4831,7 @@ window.TCM_DATA.mock178 = {
     },
     {
       "number": 139,
-      "question_en": "A 23-year-old woman has had lumps in her breasts for several years. In the past six months, the number of lumps has\nincreased.\nPatient information:\nlumps are varying in size from kidney bean to a small egg\n© lumps are hard with unclear margins\nlumps are slightly painful before her period\n* intolerance to cold and has cold limbs\n* alusterless complexion\n* painful menstruation with dark purple menses\n* clear and profuse urine\n* Tongue: pale with a thin greasy coating\n* Pulse: Deep (Chen) and Thready (xi)\nRou Gui was also used to treat this patient. According to the Nineteen Counteractions (Shi Jiu Wel), which of the following\nherbs is incompatible with Rou Gui (Cortex Cinnamomi)?",
+      "question_en": "A 23-year-old woman has had lumps in her breasts for several years. In the past six months, the number of lumps has increased.\nPatient information:\n* Lumps are varying in size from kidney bean to a small egg\n* lumps are hard with unclear margins\n* lumps are slightly painful before her period\n* intolerance to cold and has cold limbs\n* a lusterless complexion\n* painful menstruation with dark purple menses\n* clear and profuse urine\n* Tongue: pale with a thin greasy coating\n* Pulse: Deep (Chen) and Thready (xi)\nRou Gui was also used to treat this patient. According to the Nineteen Counteractions (Shi Jiu Wel), which of the following herbs is incompatible with Rou Gui (Cortex Cinnamomi)?",
       "question_hant": "一名23歲女性雙側乳房腫塊數年，近六個月來腫塊數量有所增加。\n患者資料：\n腫塊大小不一，從芸豆至小雞蛋大\n腫塊堅硬，邊緣不清\n月經前腫塊稍痛\n畏寒肢冷\n面色晦暗\n痛經伴經血深紫\n小便清長\n舌：淡，苔薄膩\n脈：沉細\n根據“十九畏”，肉桂與下列哪味中藥相畏？",
       "image": null,
       "options": [
@@ -4865,7 +4865,7 @@ window.TCM_DATA.mock178 = {
     },
     {
       "number": 140,
-      "question_en": "An 8-year-old girl had a low-grade fever that started two days ago. In the past 12 hours, the fever has worsened and now\nthe patient has a temperature of 38.5 °C.\nPatient information:\nslight chills\n+ headaches\n© thirst\n* sore and swollen throat\n© difficulty swallowing\n«enlarged submandibular glands\n* flushed face\n* Tongue: red with a thin, yellow coating\n* Pulse: Floating (Fu) and Rapid (Shuo)\nUsing Four Levels Differentiation (Wei Qi Ying Xue Bian Zheng), which level has the Pathogen penetrated for this patient?",
+      "question_en": "An 8-year-old girl had a low-grade fever that started two days ago. In the past 12 hours, the fever has worsened and now the patient has a temperature of 38.5 °C.\nPatient information:\n* slight chills\n* headaches\n* thirst\n* sore and swollen throat\n* difficulty swallowing\n* enlarged submandibular glands\n* flushed face\n* Tongue: red with a thin, yellow coating\n* Pulse: Floating (Fu) and Rapid (Shuo)\nUsing Four Levels Differentiation (Wei Qi Ying Xue Bian Zheng), which level has the Pathogen penetrated for this patient?",
       "question_hant": "根據以下背景資訊來回答第 19 至 22 題：\n8 歲女童低熱兩天，發熱加重 12 小時，現在體溫為 38.5°C。\n患者資訊：\n微有寒戰\n頭痛\n口渴\n咽喉腫痛\n吞咽困難\n頜下腺增大\n面色潮紅\n舌：紅苔薄黃\n脈：浮數\n病邪已到達衛氣營血辨證的哪個階段？",
       "image": null,
       "options": [
@@ -4957,7 +4957,7 @@ window.TCM_DATA.mock178 = {
     },
     {
       "number": 142,
-      "question_en": "An 8-year-old girl had a low-grade fever that started two days ago. In the past 12 hours, the fever has worsened and now\nthe patient has a temperature of 38.5 °C.\nPatient information:\nslight chills\n* headaches\n© thirst\n* sore and swollen throat\n* difficulty swallowing\n* enlarged submandibular glands\n* flushed face\n* Tongue: red with a thin, yellow coating\n* Pulse: Floating (Fu) and Rapid (Shuo)\nAweek later, the patient developed dry stool and her fever worsens. Select two of the following additional herbs to\naddress these symptoms. (Select 2)",
+      "question_en": "An 8-year-old girl had a low-grade fever that started two days ago. In the past 12 hours, the fever has worsened and now the patient has a temperature of 38.5 °C.\nPatient information:\n* slight chills\n* headaches\n* thirst\n* sore and swollen throat\n* difficulty swallowing\n* enlarged submandibular glands\n* flushed face\n* Tongue: red with a thin, yellow coating\n* Pulse: Floating (Fu) and Rapid (Shuo)\nA week later, the patient developed dry stool and her fever worsens. Select two of the following additional herbs to address these symptoms. (Select 2)",
       "question_hant": "根據以下背景資訊來回答第 19 至 22 題：\n8 歲女童低熱兩天，發熱加重 12 小時，現在體溫為 38.5°C。\n患者資訊：\n微有寒戰\n頭痛\n口渴\n咽喉腫痛\n吞咽困難\n頜下腺增大\n面色潮紅\n舌：紅苔薄黃\n脈：浮數\n當該患者出現大便乾燥發熱更甚時，從以下中藥中選出兩種用於對症治療。",
       "image": null,
       "options": [
@@ -4991,7 +4991,7 @@ window.TCM_DATA.mock178 = {
     },
     {
       "number": 143,
-      "question_en": "An 8-year-old girl had a low-grade fever that started two days ago. In the past 12 hours, the fever has worsened and now\nthe patient has a temperature of 38.5 °C.\nPatient information:\nslight chills\n* headaches\n© thirst\n* sore and swollen throat\n© difficulty swallowing\n* enlarged submandibular glands\n* flushed face\nTongue: red with a thin, yellow coating\n* Pulse: Floating (Fu) and Rapid (Shuo)\nThe day after the visit, the mother called to notify the clinic that her daughter has been prescribed antibiotics. Which of\nthe following teas is safe to use when taking antibiotics?",
+      "question_en": "An 8-year-old girl had a low-grade fever that started two days ago. In the past 12 hours, the fever has worsened and now the patient has a temperature of 38.5 °C.\nPatient information:\n* slight chills\n* headaches\n* thirst\n* sore and swollen throat\n* difficulty swallowing\n* enlarged submandibular glands\n* flushed face\n* Tongue: red with a thin, yellow coating\n* Pulse: Floating (Fu) and Rapid (Shuo)\nThe day after the visit, the mother called to notify the clinic that her daughter has been prescribed antibiotics. Which of the following teas is safe to use when taking antibiotics?",
       "question_hant": "根據以下背景資訊來回答第 19 至 22 題：\n8 歲女童低熱兩天，發熱加重 12 小時，現在體溫為 38.5°C。\n患者資訊：\n微有寒戰\n頭痛\n口渴\n咽喉腫痛\n吞咽困難\n頜下腺增大\n面色潮紅\n舌：紅苔薄黃\n脈：浮數\n就診後次日，患者母親電話告知診所其女兒已經在用抗生素。服用抗生素時，下列哪種茶是安全的？",
       "image": null,
       "options": [
@@ -5025,7 +5025,7 @@ window.TCM_DATA.mock178 = {
     },
     {
       "number": 144,
-      "question_en": "A 17-year-old female patient has had high fever and sore throat for two weeks, along with constant pain in both knees and\nelbows for four days.\nPatient information:\n* pain also moves from joint to joint (especially for the elbows)\n* red skin rash on knees and medial sides of upper arms\n* fever of 39.0°C\n* Tongue: pale with thin white coating\n* Pulse: Floating (Fu)\nWhat are the most likely biomedical impressions and the corresponding TCM diagnoses for this patient? (Select 2)",
+      "question_en": "A 17-year-old female patient has had high fever and sore throat for two weeks, along with constant pain in both knees and elbows for four days.\nPatient information:\n* pain also moves from joint to joint (especially for the elbows)\n* red skin rash on knees and medial sides of upper arms\n* fever of 39.0°C\n* Tongue: pale with thin white coating\n* Pulse: Floating (Fu)\nWhat are the most likely biomedical impressions and the corresponding TCM diagnoses for this patient? (Select 2)",
       "question_hant": "17歲的女患者高燒及咽喉痛兩周，伴雙膝雙肘持續疼痛四天。\n患者資料：\n疼痛會在關節之間遊走（尤其是兩肘）\n兩膝和上臂內側有紅色皮疹\n發熱39°C\n舌：淡，苔薄白\n脈：浮\n該患者最可能的西醫印象和相應的中醫診斷是什麼？",
       "image": null,
       "options": [
@@ -5059,7 +5059,7 @@ window.TCM_DATA.mock178 = {
     },
     {
       "number": 145,
-      "question_en": "A 17-year-old female patient has had high fever and sore throat for two weeks, along with constant pain in both knees and\nelbows for four days.\nPatient information:\n* pain also moves from joint to joint (especially for the elbows)\n* red skin rash on knees and medial sides of upper arms\n* fever of 39.0°C\nTongue: pale with thin white coating\nPulse: Floating (Fu)\nWhich of the following conditions is associated with this patient's primary biomedical impression? (Select 2)",
+      "question_en": "A 17-year-old female patient has had high fever and sore throat for two weeks, along with constant pain in both knees and elbows for four days.\nPatient information:\n* pain also moves from joint to joint (especially for the elbows)\n* red skin rash on knees and medial sides of upper arms\n* fever of 39.0°C\n* Tongue: pale with thin white coating\n* Pulse: Floating (Fu)\nWhich of the following conditions is associated with this patient's primary biomedical impression? (Select 2)",
       "question_hant": "17歲的女患者高燒及咽喉痛兩周，伴雙膝雙肘持續疼痛四天。\n患者資料：\n疼痛會在關節之間遊走（尤其是兩肘）\n兩膝和上臂內側有紅色皮疹\n發熱39°C\n舌：淡，苔薄白\n脈：浮\n以下哪些疾病與該患者的主要西醫印象診斷有關？",
       "image": null,
       "options": [
@@ -5093,7 +5093,7 @@ window.TCM_DATA.mock178 = {
     },
     {
       "number": 146,
-      "question_en": "A 17-year-old female patient has had high fever and sore throat for two weeks, along with constant pain in both knees and\nelbows for four days.\nPatient information:\n+ pain also moves from joint to joint (especially for the elbows)\n* red skin rash on knees and medial sides of upper arms\n* fever of 39.0°C\n* Tongue: pale with thin white coating\n+ Pulse: Floating (Fu)\nSelect one type of pain and one type of muscle strength that would be expected for this patient? (Select 2)",
+      "question_en": "A 17-year-old female patient has had high fever and sore throat for two weeks, along with constant pain in both knees and elbows for four days.\nPatient information:\n* pain also moves from joint to joint (especially for the elbows)\n* red skin rash on knees and medial sides of upper arms\n* fever of 39.0°C\n* Tongue: pale with thin white coating\n* Pulse: Floating (Fu)\nSelect one type of pain and one type of muscle strength that would be expected for this patient? (Select 2)",
       "question_hant": "17歲的女患者高燒及咽喉痛兩周，伴雙膝雙肘持續疼痛四天。\n患者資料：\n疼痛會在關節之間遊走（尤其是兩肘）\n兩膝和上臂內側有紅色皮疹\n發熱39°C\n舌：淡，苔薄白\n脈：浮\n選擇執業醫師預期該患者的一種疼痛類型和一種肌肉力量？",
       "image": null,
       "options": [
@@ -5161,7 +5161,7 @@ window.TCM_DATA.mock178 = {
     },
     {
       "number": 148,
-      "question_en": "A 70-year-old patient complains of profound tiredness for many years.\nPatient Information:\nlower back pain\n© sweats easily during the day and night\n* Tongue: dry with teeth-marks\n* Pulse: Deep (Chen) and Weak (Ruo)\nWhich of the following descriptions is appropriate when explaining the TCM causes of this patient's sweating to their\nmassage therapist?",
+      "question_en": "A 70-year-old patient complains of profound tiredness for many years.\nPatient Information:\n* lower back pain\n* sweats easily during the day and night\n* Tongue: dry with teeth-marks\n* Pulse: Deep (Chen) and Weak (Ruo)\nWhich of the following descriptions is appropriate when explaining the TCM causes of this patient's sweating to their massage therapist?",
       "question_hant": "一位70歲患者主訴極度疲倦多年。\n患者資料：\n腰痛\n晝夜易汗出\n舌：乾伴有齒痕\n脈：沉弱\n用通俗易懂的術語向按摩治療師解釋患者出汗的中醫病因，以下哪項是恰當的描述？",
       "image": null,
       "options": [
@@ -5195,7 +5195,7 @@ window.TCM_DATA.mock178 = {
     },
     {
       "number": 149,
-      "question_en": "70-year-old patient complains of profound tiredness for many years.\nPatient Information:\n* lower back pain\n© sweats easily during the day and night\nTongue: dry with teeth-marks\n* Pulse: Deep (Chen) and Weak (Ruo)\nWhat should the practitioner tell a chiropractor about this patient's lower back pain condition?",
+      "question_en": "A 70-year-old patient complains of profound tiredness for many years.\nPatient Information:\n* lower back pain\n* sweats easily during the day and night\n* Tongue: dry with teeth-marks\n* Pulse: Deep (Chen) and Weak (Ruo)\nWhat should the practitioner tell a chiropractor about this patient's lower back pain condition?",
       "question_hant": "一位70歲患者主訴極度疲倦多年。\n患者資料：\n腰痛\n晝夜易汗出\n舌：乾伴有齒痕\n脈：沉弱\n執業醫師應如何告知整脊師患者的腰痛狀況？",
       "image": null,
       "options": [
@@ -5229,7 +5229,7 @@ window.TCM_DATA.mock178 = {
     },
     {
       "number": 150,
-      "question_en": "A patient was prescribed Diazepam and Promethazine for her Menière's disease. She is accompanied by her husband for\nher TCM consultation.\nPatient Information:\n* feels her head is spinning\n* dizziness and feels unsteady\n* low frequency hearing difficulty\nfeels a fullness in her right ear\nWhich of the following two actions should the practitioner take when the patient started to have a severe nausea episode\nduring their consultation? (Select 2)",
+      "question_en": "A patient was prescribed Diazepam and Promethazine for her Menière's disease. She is accompanied by her husband for her TCM consultation.\nPatient Information:\n* feels her head is spinning\n* dizziness and feels unsteady\n* low frequency hearing difficulty\n* feels a fullness in her right ear\nWhich of the following two actions should the practitioner take when the patient started to have a severe nausea episode during their consultation? (Select 2)",
       "question_hant": "一名女性患者因美尼爾氏病（Menière’s disease）病被給予處方藥安定（Diazepam）和異丙嗪（Promethazine），由丈夫陪同來做中醫咨詢。\n患者資料：\n自覺天旋地轉\n頭暈站立不穩\n低頻聽力困難\n右耳覺滿脹感\n諮詢期間患者感覺嚴重噁心，職業中醫師應採取以下哪兩項措施？",
       "image": null,
       "options": [
@@ -5263,7 +5263,7 @@ window.TCM_DATA.mock178 = {
     },
     {
       "number": 151,
-      "question_en": "A patient was prescribed Diazepam and Promethazine for her Menière's disease. She is accompanied by her husband for\nher TCM consultation.\nPatient Information:\n* feels her head is spinning\n* dizziness and feels unsteady\n* low frequency hearing difficulty\nfeels a fullness in her right ear\nSelect four of the following commonly understood phrases that are appropriate for the practitioner to explain the\ntreatment principle to the patient.(Select 4)",
+      "question_en": "A patient was prescribed Diazepam and Promethazine for her Menière's disease. She is accompanied by her husband for her TCM consultation.\nPatient Information:\n* feels her head is spinning\n* dizziness and feels unsteady\n* low frequency hearing difficulty\n* feels a fullness in her right ear\nSelect four of the following commonly understood phrases that are appropriate for the practitioner to explain the treatment principle to the patient.(Select 4)",
       "question_hant": "一名女性患者因美尼爾氏病（Menière’s disease）病被給予處方藥安定（Diazepam）和異丙嗪（Promethazine），由丈夫陪同來做中醫咨詢。\n患者資料：\n自覺天旋地轉\n頭暈站立不穩\n低頻聽力困難\n右耳覺滿脹感\n選擇四種患者易於理解的語言解釋執業中醫師所用中醫治則。",
       "image": null,
       "options": [
@@ -5321,7 +5321,7 @@ window.TCM_DATA.mock178 = {
     },
     {
       "number": 152,
-      "question_en": "A patient was prescribed Diazepam and Promethazine for her Menière's disease. She is accompanied by her husband for\nher TCM consultation.\nPatient Information:\n* feels her head is spinning\n* dizziness and feels unsteady\n+ low frequency hearing difficulty\nfeels a fullness in her right ear\nThree weeks after seeing the practitioner, the patient called the office seeking advice for a reoccurrence of their vertigo.\nHowever, the practitioner is on vacation and unable to provide in-person visits. Which of the following two actions are\nappropriate for the practitioner to take? (Select 2)",
+      "question_en": "A patient was prescribed Diazepam and Promethazine for her Menière's disease. She is accompanied by her husband for her TCM consultation.\nPatient Information:\n* feels her head is spinning\n* dizziness and feels unsteady\n* low frequency hearing difficulty\n* feels a fullness in her right ear\nThree weeks after seeing the practitioner, the patient called the office seeking advice for a reoccurrence of their vertigo.\nHowever, the practitioner is on vacation and unable to provide in-person visits. Which of the following two actions are appropriate for the practitioner to take? (Select 2)",
       "question_hant": "一名女性患者因美尼爾氏病（Menière’s disease）病被給予處方藥安定（Diazepam）和異丙嗪（Promethazine），由丈夫陪同來做中醫咨詢。\n患者資料：\n自覺天旋地轉\n頭暈站立不穩\n低頻聽力困難\n右耳覺滿脹感\n三個星期後患者打電話給診所尋求關於她眩暈復發的建議。但執業中醫師正在度假不能親自看診。執業中醫師應採取以下哪兩種適當的應對措施？",
       "image": null,
       "options": [
@@ -5389,7 +5389,7 @@ window.TCM_DATA.mock178 = {
     },
     {
       "number": 154,
-      "question_en": "A 38-year-old male has been diagnosed with Depression (Yu Zheng).\nPatient information:\nagitation and irritability\nfullness in the chest and hypochondriac region\n* upper abdominal discomfort and acid reflux\nred eyes and tinnitus\n* adry throat with a bitter taste in the mouth\n* no interest in work ora social life\n+ drystools and has a bowel movement every three days\nfalls asleep easily but has restless sleep\n* Tongue: red with a thin, yellow coating\n* Pulse: Wiry (Xuan) and Rapid (Shuo)\nSelect four main symptom characteristics that support the diagnosis of Depression (Yu Zheng). (Select 4)",
+      "question_en": "A 38-year-old male has been diagnosed with Depression (Yu Zheng).\nPatient information:\n* Agitation and irritability\n* fullness in the chest and hypochondriac region\n* upper abdominal discomfort and acid reflux\n* red eyes and tinnitus\n* a dry throat with a bitter taste in the mouth\n* no interest in work or a social life\n* dry stools and has a bowel movement every three days\n* falls asleep easily but has restless sleep\n* Tongue: red with a thin, yellow coating\n* Pulse: Wiry (Xuan) and Rapid (Shuo)\nSelect four main symptom characteristics that support the diagnosis of Depression (Yu Zheng). (Select 4)",
       "question_hant": "根據以下背景資訊來回答第 28 至第31 題：\n38 歲男性被診斷為鬱證。\n患者資訊：\n煩躁易怒\n胸脅滿悶\n嚐雜泛酸\n目赤耳鳴\n口苦咽乾\n對工作或社交無興趣\n大便乾燥，三天一次\n容易入睡，但睡不安穩\n舌色紅苔薄黃\n脈弦數\n選擇支持診斷鬱症的四個主要症狀。",
       "image": null,
       "options": [
@@ -5447,7 +5447,7 @@ window.TCM_DATA.mock178 = {
     },
     {
       "number": 155,
-      "question_en": "A 38-year-old male has been diagnosed with Depression (Yu Zheng).\nPatient information:\nagitation and irritability\nfullness in the chest and hypochondriac region\n© upper abdominal discomfort and acid reflux\n* red eyes and tinnitus\n«a dry throat with a bitter taste in the mouth\n* no interest in work or a social life\n* dry stools and has a bowel movement every three days\n* falls asleep easily but has restless sleep\n* Tongue: red with a thin, yellow coating\n* Pulse: Wiry (Xuan) and Rapid (Shuo)\nWhich of the following primary treatment principles is appropriate for this patient's Depression (Yu Zheng)?",
+      "question_en": "A 38-year-old male has been diagnosed with Depression (Yu Zheng).\nPatient information:\n* Agitation and irritability\n* fullness in the chest and hypochondriac region\n* upper abdominal discomfort and acid reflux\n* red eyes and tinnitus\n* a dry throat with a bitter taste in the mouth\n* no interest in work or a social life\n* dry stools and has a bowel movement every three days\n* falls asleep easily but has restless sleep\n* Tongue: red with a thin, yellow coating\n* Pulse: Wiry (Xuan) and Rapid (Shuo)\nWhich of the following primary treatment principles is appropriate for this patient's Depression (Yu Zheng)?",
       "question_hant": "根據以下背景資訊來回答第 28 至第31 題：\n38 歲男性被診斷為鬱證。\n患者資訊：\n煩躁易怒\n胸脅滿悶\n嚐雜泛酸\n目赤耳鳴\n口苦咽乾\n對工作或社交無興趣\n大便乾燥，三天一次\n容易入睡，但睡不安穩\n舌色紅苔薄黃\n脈弦數\n下列哪項治則適合於該鬱症患者？",
       "image": null,
       "options": [
@@ -5481,7 +5481,7 @@ window.TCM_DATA.mock178 = {
     },
     {
       "number": 156,
-      "question_en": "A 38-year-old male has been diagnosed with Depression (Yu Zheng).\nPatient information:\nagitation and irritability\n* fullness in the chest and hypochondriac region\n* upper abdominal discomfort and acid reflux\n* red eyes and tinnitus\n* adry throat with a bitter taste in the mouth\n* no interest in work ora social life\n* drystools and has a bowel movement every three days\n* falls asleep easily but has restless sleep\n* Tongue: red with a thin, yellow coating\n* Pulse: Wiry (Xuan) and Rapid (Shuo)\nXiao Yao San (Rambling Powder) is prescribed to this patient. Select 4 herbs from the following list that are included in\nthis prescription.(Select 4)",
+      "question_en": "A 38-year-old male has been diagnosed with Depression (Yu Zheng).\nPatient information:\n* Agitation and irritability\n* fullness in the chest and hypochondriac region\n* upper abdominal discomfort and acid reflux\n* red eyes and tinnitus\n* a dry throat with a bitter taste in the mouth\n* no interest in work or a social life\n* dry stools and has a bowel movement every three days\n* falls asleep easily but has restless sleep\n* Tongue: red with a thin, yellow coating\n* Pulse: Wiry (Xuan) and Rapid (Shuo)\nXiao Yao San (Rambling Powder) is prescribed to this patient. Select 4 herbs from the following list that are included in this prescription.(Select 4)",
       "question_hant": "根據以下背景資訊來回答第 28 至第31 題：\n38 歲男性被診斷為鬱證。\n患者資訊：\n煩躁易怒\n胸脅滿悶\n嚐雜泛酸\n目赤耳鳴\n口苦咽乾\n對工作或社交無興趣\n大便乾燥，三天一次\n容易入睡，但睡不安穩\n舌色紅苔薄黃\n脈弦數\n用於治療該患者的逍遙散，以下哪四味中藥為其主要成分？",
       "image": null,
       "options": [
@@ -5539,7 +5539,7 @@ window.TCM_DATA.mock178 = {
     },
     {
       "number": 157,
-      "question_en": "A 38-year-old male has been diagnosed with Depression (Yu Zheng).\nPatient information:\n* agitation and irritability\n* fullness in the chest and hypochondriac region\n* upper abdominal discomfort and acid reflux\nred eyes and tinnitus\n+ adry throat with a bitter taste in the mouth\n* no interest in work ora social life\n* drystools and has a bowel movement every three days\n«falls asleep easily but has restless sleep\n* Tongue: red with a thin, yellow coating\nPulse: Wiry (Xuan) and Rapid (Shuo)\nAccording to the Syndrome Differentiation, choose four pairs of herbs to add to Xiao Yao San (Rambling Powder) that\nwould best modify the formula for this patient. (Select 4)",
+      "question_en": "A 38-year-old male has been diagnosed with Depression (Yu Zheng).\nPatient information:\n* Agitation and irritability\n* fullness in the chest and hypochondriac region\n* upper abdominal discomfort and acid reflux\n* red eyes and tinnitus\n* a dry throat with a bitter taste in the mouth\n* no interest in work or a social life\n* dry stools and has a bowel movement every three days\n* falls asleep easily but has restless sleep\n* Tongue: red with a thin, yellow coating\n* Pulse: Wiry (Xuan) and Rapid (Shuo)\nAccording to the Syndrome Differentiation, choose four pairs of herbs to add to Xiao Yao San (Rambling Powder) that would best modify the formula for this patient. (Select 4)",
       "question_hant": "根據以下背景資訊來回答第 28 至第31 題：\n38 歲男性被診斷為鬱證。\n患者資訊：\n煩躁易怒\n胸脅滿悶\n嚐雜泛酸\n目赤耳鳴\n口苦咽乾\n對工作或社交無興趣\n大便乾燥，三天一次\n容易入睡，但睡不安穩\n舌色紅苔薄黃\n脈弦數\n下列哪四對中藥最宜添加到患者所用處方逍遙散中？",
       "image": null,
       "options": [
@@ -5597,7 +5597,7 @@ window.TCM_DATA.mock178 = {
     },
     {
       "number": 158,
-      "question_en": "32-year-old patient has been suffering from debilitating headaches for one month.\nPatient Information:\n* tremendous stress at work\n* irritable and angry\n* occasional dizziness\n* Tongue: red, especially on the sides, dry, with a yellow coating\n* Pulse: Wiry (Xuan) and Rapid (Shuo)\nWhat is the TCM diagnosis for this patient?",
+      "question_en": "A 32-year-old patient has been suffering from debilitating headaches for one month.\nPatient Information:\n* tremendous stress at work\n* irritable and angry\n* occasional dizziness\n* Tongue: red, especially on the sides, dry, with a yellow coating\n* Pulse: Wiry (Xuan) and Rapid (Shuo)\nWhat is the TCM diagnosis for this patient?",
       "question_hant": "A 32-year-old patient has been suffering from debilitating headaches for one month.\nPatient Information:\ntremendous stress at work\nirritable and angry\noccasional dizziness\nTongue: red, especially on the sides, dry, with a yellow coating\nPulse: Wiry (Xuan) and Rapid (Shuo)\n該病人的中醫診斷是什麼？",
       "image": null,
       "options": [
@@ -5631,7 +5631,7 @@ window.TCM_DATA.mock178 = {
     },
     {
       "number": 159,
-      "question_en": "A 32-year-old patient has been suffering from debilitating headaches for one month.\nPatient Information:\n* tremendous stress at work\nirritable and angry\n* occasional dizziness\n* Tongue: red, especially on the sides, dry, with a yellow coating\n* Pulse: Wiry (Xuan) and Rapid (Shuo)\nSelect four of the following acupuncture points that are most suitable for this patient's condition. (Select 4)",
+      "question_en": "A 32-year-old patient has been suffering from debilitating headaches for one month.\nPatient Information:\n* tremendous stress at work\n* irritable and angry\n* occasional dizziness\n* Tongue: red, especially on the sides, dry, with a yellow coating\n* Pulse: Wiry (Xuan) and Rapid (Shuo)\nSelect four of the following acupuncture points that are most suitable for this patient's condition. (Select 4)",
       "question_hant": "A 32-year-old patient has been suffering from debilitating headaches for one month.\nPatient Information:\ntremendous stress at work\nirritable and angry\noccasional dizziness\nTongue: red, especially on the sides, dry, with a yellow coating\nPulse: Wiry (Xuan) and Rapid (Shuo)\n選擇下列四個最適合治療該病人病情的針灸穴位。",
       "image": null,
       "options": [
@@ -5689,7 +5689,7 @@ window.TCM_DATA.mock178 = {
     },
     {
       "number": 160,
-      "question_en": "32-year-old patient has been suffering from debilitating headaches for one month.\nPatient Information:\n* tremendous stress at work\nirritable and angry\n* occasional dizziness\n* Tongue: red, especially on the sides, dry, with a yellow coating\n* Pulse: Wiry (Xuan) and Rapid (Shuo)\nWhich of the following formulas is most suitable to treat this patient?",
+      "question_en": "A 32-year-old patient has been suffering from debilitating headaches for one month.\nPatient Information:\n* tremendous stress at work\n* irritable and angry\n* occasional dizziness\n* Tongue: red, especially on the sides, dry, with a yellow coating\n* Pulse: Wiry (Xuan) and Rapid (Shuo)\nWhich of the following formulas is most suitable to treat this patient?",
       "question_hant": "A 32-year-old patient has been suffering from debilitating headaches for one month.\nPatient Information:\ntremendous stress at work\nirritable and angry\noccasional dizziness\nTongue: red, especially on the sides, dry, with a yellow coating\nPulse: Wiry (Xuan) and Rapid (Shuo)\n下列哪種方劑最適合治療該病人？",
       "image": null,
       "options": [
@@ -5723,7 +5723,7 @@ window.TCM_DATA.mock178 = {
     },
     {
       "number": 161,
-      "question_en": "32-year-old patient has been suffering from debilitating headaches for one month.\nPatient Information:\n* tremendous stress at work\n© irritable and angry\n* occasional dizziness\n* Tongue: red, especially on the sides, dry, with a yellow coating\n* Pulse: Wiry (Xuan) and Rapid (Shuo)\nAt the third appointment, the patient complains of sour tasting regurgitations. Which of the following Fu Organs is most\nlikely to be involved?",
+      "question_en": "A 32-year-old patient has been suffering from debilitating headaches for one month.\nPatient Information:\n* tremendous stress at work\n* irritable and angry\n* occasional dizziness\n* Tongue: red, especially on the sides, dry, with a yellow coating\n* Pulse: Wiry (Xuan) and Rapid (Shuo)\nAt the third appointment, the patient complains of sour tasting regurgitations. Which of the following Fu Organs is most likely to be involved?",
       "question_hant": "A 32-year-old patient has been suffering from debilitating headaches for one month.\nPatient Information:\ntremendous stress at work\nirritable and angry\noccasional dizziness\nTongue: red, especially on the sides, dry, with a yellow coating\nPulse: Wiry (Xuan) and Rapid (Shuo)\n在第三次就診時，病人訴有酸味反流。下列哪一個臟腑最有可能受影響？",
       "image": null,
       "options": [
@@ -5757,7 +5757,7 @@ window.TCM_DATA.mock178 = {
     },
     {
       "number": 162,
-      "question_en": "A 19-year-old patient started her very first period six-months ago. She has been suffering from abnormal uterine bleeding.\nPatient information:\nanxiety and tidal fever\nfeverish feeling in the palms and soles,\n© weak and aching of the lower back and knees,\nTongue: red with little coating\n* Pulse: Rapid (Shuo) and Thready (xi)\nSelect two of the following clinical descriptions the practitioner would expect for the patient's bleeding symptoms. (Select\n2)",
+      "question_en": "A 19-year-old patient started her very first period six-months ago. She has been suffering from abnormal uterine bleeding.\nPatient information:\n* Anxiety and tidal fever\n* Feverish feeling in the palms and soles,\n* weak and aching of the lower back and knees,\n* Tongue: red with little coating\n* Pulse: Rapid (Shuo) and Thready (xi)\nSelect two of the following clinical descriptions the practitioner would expect for the patient's bleeding symptoms. (Select 2)",
       "question_hant": "一名19歲的患者自從6個月前月經初潮至今一直有異常的子宮出血。\n患者資料：\n焦慮潮熱\n手足心熱\n腰膝酸軟\n舌：紅，苔少\n脈：細數\n選擇兩項執業醫師預期的關於患者出血症狀的臨床表現。",
       "image": null,
       "options": [
@@ -5791,7 +5791,7 @@ window.TCM_DATA.mock178 = {
     },
     {
       "number": 163,
-      "question_en": "19-year-old patient started her very first period six-months ago. She has been suffering from abnormal uterine bleeding.\nPatient information:\n* anxiety and tidal fever\nfeverish feeling in the palms and soles,\nweak and aching of the lower back and knees,\nTongue: red with little coating\n* Pulse: Rapid (Shuo) and Thready (Xi)\nSelect two correct statements relating to the actions of the herbs in Zuo Gui Wan (Restore the Left [Kidney] Pill) formula\nthat would aid this patient. (Select 2)\n(1D TuSiZi (Semen Cuscutae) tonifies Yang to generate Yin",
+      "question_en": "A 19-year-old patient started her very first period six-months ago. She has been suffering from abnormal uterine bleeding.\nPatient information:\n* Anxiety and tidal fever\n* Feverish feeling in the palms and soles,\n* weak and aching of the lower back and knees,\n* Tongue: red with little coating\n* Pulse: Rapid (Shuo) and Thready (xi)\nSelect two correct statements relating to the actions of the herbs in Zuo Gui Wan (Restore the Left [Kidney] Pill) formula that would aid this patient. (Select 2)",
       "question_hant": "一名19歲的患者自從6個月前月經初潮至今一直有異常的子宮出血。\n患者資料：\n焦慮潮熱\n手足心熱\n腰膝酸軟\n舌：紅，苔少\n脈：細數\n選擇兩項左歸丸裡的組成藥味及相關功效，並能有助於該患者的正確陳述。",
       "image": null,
       "options": [
@@ -5825,7 +5825,7 @@ window.TCM_DATA.mock178 = {
     },
     {
       "number": 164,
-      "question_en": "A 19-year-old patient started her very first period six-months ago. She has been suffering from abnormal uterine bleeding.\nPatient information:\nanxiety and tidal fever\nfeverish feeling in the palms and soles,\n© weak and aching of the lower back and knees,\n* Tongue: red with little coating\n* Pulse: Rapid (Shuo) and Thready (xi)\nWhich of the following herbs in Zuo Gui Wan (Restore the Left [Kidney] Pill) should be omitted due to its potential adverse\neffect for this case?",
+      "question_en": "A 19-year-old patient started her very first period six-months ago. She has been suffering from abnormal uterine bleeding.\nPatient information:\n* Anxiety and tidal fever\n* Feverish feeling in the palms and soles,\n* weak and aching of the lower back and knees,\n* Tongue: red with little coating\n* Pulse: Rapid (Shuo) and Thready (xi)\nWhich of the following herbs in Zuo Gui Wan (Restore the Left [Kidney] Pill) should be omitted due to its potential adverse effect for this case?",
       "question_hant": "一名19歲的患者自從6個月前月經初潮至今一直有異常的子宮出血。\n患者資料：\n焦慮潮熱\n手足心熱\n腰膝酸軟\n舌：紅，苔少\n脈：細數\n左歸丸中的哪味中藥因可能對該患者造成不良影響而應被減去？",
       "image": null,
       "options": [
@@ -5859,7 +5859,7 @@ window.TCM_DATA.mock178 = {
     },
     {
       "number": 165,
-      "question_en": "31-year-old woman has been suffering from irregular menstruation for the past 10 years.\nPatient information:\n* scanty dark blood flow with clots\n© menstrual cramps relieved by warmth and aggravated by cold\n* pale complexion\nSelect two Tongue and two Pulse presentations that would most likely be expected for this patient. (Select 4)",
+      "question_en": "A 31-year-old woman has been suffering from irregular menstruation for the past 10 years.\nPatient information:\n* scanty dark blood flow with clots\n* menstrual cramps relieved by warmth and aggravated by cold\n* pale complexion\nSelect two Tongue and two Pulse presentations that would most likely be expected for this patient. (Select 4)",
       "question_hant": "請使用以下背景資訊回答問題 54 至 55:\n一名 31 歲女性患者，主訴月經不調超過 10 年。\n患者資訊：\n月經量少，色暗，有血塊\n痛經得溫則減，遇冷加重\n面色蒼白\n請選擇最有可能出現在這個患者身上的兩種舌苔和兩種脈象。",
       "image": null,
       "options": [
@@ -5917,7 +5917,7 @@ window.TCM_DATA.mock178 = {
     },
     {
       "number": 166,
-      "question_en": "A 31-year-old woman has been suffering from irregular menstruation for the past 10 years.\nPatient information:\n* scanty dark blood flow with clots\n© menstrual cramps relieved by warmth and aggravated by cold\n* pale complexion\nThe patient returns five months later and complains of a delayed menstrual cycle for 2 weeks. She is also experiencing\nsudden cramping and vaginal bleeding, Select two biomedical impressions that the practitioner should be most\nconcerned about.(Select 2)",
+      "question_en": "A 31-year-old woman has been suffering from irregular menstruation for the past 10 years.\nPatient information:\n* scanty dark blood flow with clots\n* menstrual cramps relieved by warmth and aggravated by cold\n* pale complexion\nThe patient returns five months later and complains of a delayed menstrual cycle for 2 weeks. She is also experiencing sudden cramping and vaginal bleeding, Select two biomedical impressions that the practitioner should be most concerned about.(Select 2)",
       "question_hant": "請使用以下背景資訊回答問題 54 至 55:\n一名 31 歲女性患者，主訴月經不調超過 10 年。\n患者資訊：\n月經量少，色暗，有血塊\n痛經得溫則減，遇冷加重\n面色蒼白\n患者 5 個月後回來複診，主訴月經推遲 2 週。同時患者突然出現腹部痙攣和陰道出血。請選擇兩項中醫師最需要考慮的生物醫學可能性。",
       "image": null,
       "options": [
@@ -5951,7 +5951,7 @@ window.TCM_DATA.mock178 = {
     },
     {
       "number": 167,
-      "question_en": "A patient who is 18 weeks pregnant has had a cold for over one week.\nPatient Information:\n* cough with profuse and sticky phlegm\n* fullness in the chest\nTongue: light red, with a white and greasy coating\n+ Pulse: Slippery (Hua)\nThe practitioner accidentally punctured their finger when removing the needles. What is the first action they should take?",
+      "question_en": "A patient who is 18 weeks pregnant has had a cold for over one week.\nPatient Information:\n* cough with profuse and sticky phlegm\n* fullness in the chest\n* Tongue: light red, with a white and greasy coating\n* Pulse: Slippery (Hua)\nThe practitioner accidentally punctured their finger when removing the needles. What is the first action they should take?",
       "question_hant": "一名懷孕18週的患者感冒已有一週。\n患者資料：\n咳嗽伴大量粘痰\n胸悶\n舌：淡紅，苔白膩\n脈：滑\n中醫師在拔針時不小心刺傷了自己的手指。該醫師首先應該採取以下哪項措施？",
       "image": null,
       "options": [
@@ -5985,7 +5985,7 @@ window.TCM_DATA.mock178 = {
     },
     {
       "number": 168,
-      "question_en": "A patient who is 18 weeks pregnant has had a cold for over one week.\nPatient information:\n* cough with profuse and sticky phlegm\nfullness in the chest\nTongue: light red, with a white and greasy coating\n* Pulse: Slippery (Hua)\nThe practitioner discovers blood on a pillowcase. How should the practitioner manage the contaminated area?",
+      "question_en": "A patient who is 18 weeks pregnant has had a cold for over one week.\nPatient Information:\n* cough with profuse and sticky phlegm\n* fullness in the chest\n* Tongue: light red, with a white and greasy coating\n* Pulse: Slippery (Hua)\nThe practitioner discovers blood on a pillowcase. How should the practitioner manage the contaminated area?",
       "question_hant": "一名懷孕18週的患者感冒已有一週。\n患者資料：\n咳嗽伴大量粘痰\n胸悶\n舌：淡紅，苔白膩\n脈：滑\n一個枕套上有血漬，中醫師應如何處理污染的部分？",
       "image": null,
       "options": [
@@ -6053,7 +6053,7 @@ window.TCM_DATA.mock178 = {
     },
     {
       "number": 170,
-      "question_en": "A patient has been experiencing loose stools for six months.\nPatient Information:\n* low energy\n* poor appetite\n* occasional bloating after meals\n* stools contain undigested food\n* Tongue: pale and swollen\n* Pulse: Weak (Ruo}, Slow (Chi) and Deep (Chen)\nWhich of the following treatment methods would be most beneficial to supplement the main treatment plan?",
+      "question_en": "A patient has been experiencing loose stools for six months.\nPatient Information:\n* low energy\n* poor appetite\n* occasional bloating after meals\n* stools contain undigested food\n* Tongue: pale and swollen\n* Pulse: Weak (Ruo), Slow (Chi) and Deep (Chen)\nWhich of the following treatment methods would be most beneficial to supplement the main treatment plan?",
       "question_hant": "一名患者大便稀溏已六個月。\n患者資料：\n精力不足\n食欲不佳\n餐後偶有腹脹\n大便中含未消化物\n舌：淡胖\n脈：沉遲弱\n以下哪種治療方法最適合作為主要治療方案的補充？",
       "image": null,
       "options": [
@@ -6087,7 +6087,7 @@ window.TCM_DATA.mock178 = {
     },
     {
       "number": 171,
-      "question_en": "A patient has been experiencing loose stools for six months.\nPatient Information:\n* low energy\n* poor appetite\n* occasional bloating after meals\n* stools contain undigested food\n* Tongue: pale and swollen\n* Pulse: Weak (Ruo}, Slow (Chi) and Deep (Chen)\nWhich of the Eight Confluent Points (Ba Mai Jiao Hui Xue) is most suitable to be added into the treatment plan for this\npatient?",
+      "question_en": "A patient has been experiencing loose stools for six months.\nPatient Information:\n* low energy\n* poor appetite\n* occasional bloating after meals\n* stools contain undigested food\n* Tongue: pale and swollen\n* Pulse: Weak (Ruo), Slow (Chi) and Deep (Chen)\nWhich of the Eight Confluent Points (Ba Mai Jiao Hui Xue) is most suitable to be added into the treatment plan for this patient?",
       "question_hant": "一名患者大便稀溏已六個月。\n患者資料：\n精力不足\n食欲不佳\n餐後偶有腹脹\n大便中含未消化物\n舌：淡胖\n脈：沉遲弱\n以下哪個八脈交會穴最適合加入該患者的治療方案中？",
       "image": null,
       "options": [
@@ -6155,7 +6155,7 @@ window.TCM_DATA.mock178 = {
     },
     {
       "number": 173,
-      "question_en": "A 50-year-old patient complains of upper abdominal pain for three days.\nPatient information:\ntheir condition started after consuming a large amount of alcohol and food at a late-night dinner party\n* abdominal fullness and distention\n© irritability\n* feverish sensation\n© thirsty\n© nausea and headache\n* bowel movement is difficult with hard stools\n* urine is yellow and scanty\n* Tongue: yellow and greasy coating\n© Pulse: Slippery (Hua) and Rapid (Shuo)\nSelect the four best acupuncture points to treat this patient. (Select 4)",
+      "question_en": "A 50-year-old patient complains of upper abdominal pain for three days.\nPatient information:\n* their condition started after consuming a large amount of alcohol and food at a late-night dinner party\n* abdominal fullness and distention\n* irritability\n* feverish sensation\n* thirsty\n* nausea and headache\n* bowel movement is difficult with hard stools\n* urine is yellow and scanty\n* Tongue: yellow and greasy coating\n* Pulse: Slippery (Hua) and Rapid (Shuo)\nSelect the four best acupuncture points to treat this patient. (Select 4)",
       "question_hant": "一名50歲患者主訴上腹痛三天。\n患者資料：\n腹痛始於晚宴大量飲酒和進食後\n腹部脹滿\n煩躁\n身熱\n口渴\n噁心頭痛\n大便艱難燥結\n尿黃量少\n舌：苔黃膩\n脈：滑數\n選擇四個最適合治療該患者的穴位。",
       "image": null,
       "options": [
@@ -6213,7 +6213,7 @@ window.TCM_DATA.mock178 = {
     },
     {
       "number": 174,
-      "question_en": "A 50-year-old patient complains of upper abdominal pain for three days.\nPatient information:\ntheir condition started after consuming a large amount of alcohol and food at a late-night dinner party\n* abdominal fullness and distention\n* irritability\n* feverish sensation\n© thirsty\nnausea and headache\n* bowel movement is difficult with hard stools\n* urine yellow and scanty\n* Tongue: yellow and greasy coating\n* Pulse: Slippery (Hua) and Rapid (Shuo)\nWhat is the correct dosage in grams of Hou Po (Cortex Magnoliae Officinalis) in Da Cheng Qi Tang (Major Order the Qi\nDecoction) used to treat this patient?\n06g",
+      "question_en": "A 50-year-old patient complains of upper abdominal pain for three days.\nPatient information:\n* their condition started after consuming a large amount of alcohol and food at a late-night dinner party\n* abdominal fullness and distention\n* irritability\n* feverish sensation\n* thirsty\n* nausea and headache\n* bowel movement is difficult with hard stools\n* urine is yellow and scanty\n* Tongue: yellow and greasy coating\n* Pulse: Slippery (Hua) and Rapid (Shuo)\nWhat is the correct dosage in grams of Hou Po (Cortex Magnoliae Officinalis) in Da Cheng Qi Tang (Major Order the Qi Decoction) used to treat this patient?",
       "question_hant": "一名50歲患者主訴上腹痛三天。\n患者資料：\n腹痛始於晚宴大量飲酒和進食後\n腹部脹滿\n煩躁\n身熱\n口渴\n噁心頭痛\n大便艱難燥結\n尿黃量少\n舌：苔黃膩\n脈：滑數\n用於治療該患者大承氣湯中厚朴的劑量應為多少克？",
       "image": null,
       "options": [
@@ -6247,7 +6247,7 @@ window.TCM_DATA.mock178 = {
     },
     {
       "number": 175,
-      "question_en": "38-year-old patient enjoys running at lunchtime during the summer. Last week, the patient felt unwell after a run and\ndrank ginger tea to help with the symptoms.\nPatient Information:\n* runny nose, sticky yellow nasal discharge\n* forehead distending headache\n+ chills\n© thirst\n* Tongue: red with a yellow coating\n* Pulse: Rapid (Shuo) and Forceful (You Li)\nWhich of the following Meridians correspond to this patient's headache?",
+      "question_en": "A 38-year-old patient enjoys running at lunchtime during the summer. Last week, the patient felt unwell after a run and drank ginger tea to help with the symptoms.\nPatient Information:\n* runny nose, sticky yellow nasal discharge\n* forehead distending headache\n* chills\n* thirst\n* Tongue: red with a yellow coating\n* Pulse: Rapid (Shuo) and Forceful (You Li)\nWhich of the following Meridians correspond to this patient's headache?",
       "question_hant": "一名38歲患者喜歡在夏季午餐時間跑步。上週，患者跑步後感覺不適，喝了薑茶來緩解症狀。\n患者資料：\n流黃色粘稠的鼻涕\n額頭脹痛\n惡寒\n口渴\n舌：紅，苔黃\n脈：數而有力\n根據經絡理論，以下哪條經脈與該患者的頭痛相關？",
       "image": null,
       "options": [
@@ -6281,7 +6281,7 @@ window.TCM_DATA.mock178 = {
     },
     {
       "number": 176,
-      "question_en": "A 38-year-old patient enjoys running at lunchtime during the summer. Last week, the patient felt unwell after a run and\ndrank ginger tea to help with the symptoms.\nPatient Information:\n* runny nose, sticky yellow nasal discharge\n* forehead distending headache\n* chills\n© thirst\n* Tongue: red with a yellow coating\nPulse: Rapid (Shuo) and Forceful (You Li)\nSelect four auricular (ear) points that are the most appropriate for treating this patient's current condition. (Select 4)",
+      "question_en": "A 38-year-old patient enjoys running at lunchtime during the summer. Last week, the patient felt unwell after a run and drank ginger tea to help with the symptoms.\nPatient Information:\n* runny nose, sticky yellow nasal discharge\n* forehead distending headache\n* chills\n* thirst\n* Tongue: red with a yellow coating\n* Pulse: Rapid (Shuo) and Forceful (You Li)\nSelect four auricular (ear) points that are the most appropriate for treating this patient's current condition. (Select 4)",
       "question_hant": "一名38歲患者喜歡在夏季午餐時間跑步。上週，患者跑步後感覺不適，喝了薑茶來緩解症狀。\n患者資料：\n流黃色粘稠的鼻涕\n額頭脹痛\n惡寒\n口渴\n舌：紅，苔黃\n脈：數而有力\n選擇四個最適合治療該患者目前病症的耳穴。",
       "image": null,
       "options": [
@@ -6339,7 +6339,7 @@ window.TCM_DATA.mock178 = {
     },
     {
       "number": 177,
-      "question_en": "A 38-year-old patient enjoys running at lunchtime during the summer. Last week, the patient felt unwell after a run and\ndrank ginger tea to help with the symptoms.\nPatient Information:\n* runny nose, sticky yellow nasal discharge\n* forehead distending headache\n+ chills\n© thirst\nTongue: red with a yellow coating\nPulse: Rapid (Shuo) and Forceful (You Li)\nBased on the Meridian Theory, select four acupuncture points that are most appropriate for treating this patient's\nheadache. (Select 4)",
+      "question_en": "A 38-year-old patient enjoys running at lunchtime during the summer. Last week, the patient felt unwell after a run and drank ginger tea to help with the symptoms.\nPatient Information:\n* runny nose, sticky yellow nasal discharge\n* forehead distending headache\n* chills\n* thirst\n* Tongue: red with a yellow coating\n* Pulse: Rapid (Shuo) and Forceful (You Li)\nBased on the Meridian Theory, select four acupuncture points that are most appropriate for treating this patient's headache. (Select 4)",
       "question_hant": "一名38歲患者喜歡在夏季午餐時間跑步。上週，患者跑步後感覺不適，喝了薑茶來緩解症狀。\n患者資料：\n流黃色粘稠的鼻涕\n額頭脹痛\n惡寒\n口渴\n舌：紅，苔黃\n脈：數而有力\n根據經絡理論，選擇以下四個最適合治療該患者頭痛的穴位。",
       "image": null,
       "options": [
@@ -6397,7 +6397,7 @@ window.TCM_DATA.mock178 = {
     },
     {
       "number": 178,
-      "question_en": "39-year-old postpartum patient complains of fatigue for two years.\nPatient information:\n* reduced appetite\ndecreased breast milk\n* mild headache\n© upper back pain\nirregular menstrual periods with a long cycle and scanty flow\n* Tongue: pale, thin with a dry coating\n* Pulse: Thready (Xi) and Forceless (Wu Li)\nIn which two instances should a dispensing herbalist contact a prescribing practitioner? (Select 2)",
+      "question_en": "A 39-year-old postpartum patient complains of fatigue for two years.\nPatient information:\n* reduced appetite\n* Decreased breast milk\n* mild headache\n* upper back pain\n* Irregular menstrual periods with a long cycle and scanty flow\n* Tongue: pale, thin with a dry coating\n* Pulse: Thready (Xi) and Forceless (Wu Li)\nIn which two instances should a dispensing herbalist contact a prescribing practitioner? (Select 2)",
       "question_hant": "一名39歲的產婦主訴疲勞兩年。\n患者資料：\n食欲下降\n泌乳減少\n輕度頭痛\n上背痛\n月經不規律：週期長，血量少\n舌：淡，苔薄少津\n脈：細而無力\n配藥的中藥師在哪兩種情況下應聯繫開藥方的執業中醫師？",
       "image": null,
       "options": [
