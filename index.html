@@ -506,6 +506,7 @@
 <script src="Herbology.json"></script>
 <script src="1000_Questions.json"></script>
 <script src="Safety_and_Jurisprudence.json"></script>
+<script src="MockExam178.json"></script>
 
 <!--
   以下是 opencc-js 的 Traditional->Simplified (t2cn) 轉換字典，直接內嵌在這個
@@ -519,7 +520,7 @@
 </script>
 
 <script>
-const CAT_ORDER = ["acu","bio","fnd","herb","q1000","safety"];
+const CAT_ORDER = ["acu","bio","fnd","herb","q1000","mock178","safety"];
 const DRAW_SIZES = [50,100,200];
 const CONTENT_TEMPLATE = document.getElementById('content').innerHTML;
 
@@ -529,7 +530,8 @@ const CAT_FALLBACK_META = {
   fnd:   { nameEn:'Foundation', nameZh:'中醫基礎理論', file:'Foundation.json' },
   herb:  { nameEn:'Herbology', nameZh:'中藥學', file:'Herbology.json' },
   q1000: { nameEn:'Question Bank (1000)', nameZh:'1000題', file:'1000_Questions.json' },
-  safety:{ nameEn:'Safety and Jurisprudence', nameZh:'法規與安全', file:'Safety_and_Jurisprudence.json' }
+  safety:{ nameEn:'Safety and Jurisprudence', nameZh:'法規與安全', file:'Safety_and_Jurisprudence.json' },
+  mock178:{ nameEn:'Mock Exam 178', nameZh:'模擬考題178', file:'MockExam178.json' }
 };
 
 const CATS = {};
